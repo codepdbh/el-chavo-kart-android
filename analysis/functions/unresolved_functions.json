@@ -1,0 +1,10 @@
+[
+  {
+    "function": "0x82925E90",
+    "kind": "conditional-branch",
+    "source": "0x82925FB8",
+    "target": "0x82925E6C",
+    "label_in_same_function": false,
+    "file": "chavokart_recomp.60.cpp"
+  }
+]

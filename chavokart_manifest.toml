@@ -1,0 +1,14 @@
+# ReXGlue manifest for El Chavo Kart (Xbox 360, title 475807D7).
+# game_xex/ is a local junction to the user's extracted copy (scripts/setup.ps1); it is never modified.
+# Generated code is only valid for default.xex SHA-256
+# 1db4e96b413d5629206ffe63e73c0e1cfaca9eea24bcf6fced6db9b135ce120f (checked by scripts/generate-code.ps1).
+
+[project]
+name = "chavokart"
+sdk_version = "0.10.0"
+game_root = "game_xex"
+
+[entrypoint]
+file_path = "game_xex/default.xex"
+out_directory_path = "generated/default"
+includes = ["chavokart_analysis.toml", "chavokart_data_entries.toml"]

@@ -1,0 +1,2 @@
+// Versions match the working the-simpsons-game-android / nfsmw-android toolchain on this machine (AGP 8.9.1, Gradle 8.13).
+plugins { id 'com.android.application' version '8.9.1' apply false }

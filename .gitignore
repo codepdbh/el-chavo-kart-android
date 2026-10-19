@@ -1,0 +1,66 @@
+# --- Commercial game data (never commit) ---
+game_xex
+game_xex/
+/El Chavo Kart/
+*.xex
+*.xxx
+*.upk
+*.tfc
+*.fsb
+*.fsbcache
+*.bik
+*.BIK
+*.usm
+*.xma
+*.wmv
+*.uncompressed_size
+Coalesced_*.bin
+GlobalShaderCache-*.bin
+AvatarAssetPack
+nxeart
+*.iso
+*.god
+*.stfs
+
+# --- Derived from the executable / game data (not redistributable without authorization) ---
+generated/default/
+generated/*.cpp
+out/
+*.bin
+analysis/**/*.bin
+shader_cache/
+*.spv
+*.dmp
+*.core
+*.hprof
+
+# --- Third-party reference checkouts (pinned, fetched by scripts/setup.ps1) ---
+references/
+
+# --- Secrets and signing ---
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+*.pem
+*.p12
+local.properties
+
+# --- Build/caches ---
+build/
+.cxx/
+.gradle/
+android/app/build/
+android/build/
+*.apk
+*.aab
+*.zip
+*.7z
+*.log
+*.log.err
+__pycache__/
+.venv/
+CMakeUserPresets.json
+.vs/
+.vscode/
+.idea/

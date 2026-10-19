@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original artwork for this project: a wooden barrel with a racing checker band. No game assets. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#8B5A2B" android:pathData="M36,28 Q54,22 72,28 Q78,54 72,80 Q54,86 36,80 Q30,54 36,28 Z" />
+    <path android:fillColor="#A86C35" android:pathData="M44,26 Q54,24 64,26 Q68,54 64,82 Q54,84 44,82 Q40,54 44,26 Z" />
+    <path android:fillColor="#5C3A1A" android:pathData="M33,38 Q54,33 75,38 L75.6,42 Q54,37 32.4,42 Z" />
+    <path android:fillColor="#5C3A1A" android:pathData="M32.4,66 Q54,71 75.6,66 L75,70 Q54,75 33,70 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M31.6,48 L76.4,48 L76.6,60 L31.4,60 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M31.6,48 L37,48 L37,54 L31.5,54 Z M42.6,48 L48.2,48 L48.2,54 L42.6,54 Z M53.8,48 L59.4,48 L59.4,54 L53.8,54 Z M65,48 L70.6,48 L70.6,54 L65,54 Z M37,54 L42.6,54 L42.6,60 L37,60 Z M48.2,54 L53.8,54 L53.8,60 L48.2,60 Z M59.4,54 L65,54 L65,60 L59.4,60 Z M70.6,54 L76.5,54 L76.6,60 L70.6,60 Z" />
+    <path android:fillColor="#FFC93C" android:pathData="M42,24 Q54,20 66,24 Q54,28 42,24 Z" />
+</vector>

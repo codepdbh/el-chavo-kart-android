@@ -1,0 +1,68 @@
+{
+  "ESM": {
+    "text_packages": [
+      "ChavoKartGame/CookedXbox360/ChavoKartGame_LOC_ESM.xxx",
+      "ChavoKartGame/CookedXbox360/Startup_LOC_ESM.xxx"
+    ],
+    "coalesced": [
+      "ChavoKartGame/CookedXbox360/Coalesced_ESM.bin"
+    ],
+    "movies": [
+      "ChavoKartGame/Movies/DISCLAIMER01_ESM.BIK"
+    ],
+    "toc": [
+      "ChavoKartGame/Xbox360TOC_ESM.txt"
+    ],
+    "name": "Spanish (Latin America)",
+    "default": false
+  },
+  "ESN": {
+    "text_packages": [
+      "ChavoKartGame/CookedXbox360/ChavoKartGame_LOC_ESN.xxx",
+      "ChavoKartGame/CookedXbox360/Startup_LOC_ESN.xxx"
+    ],
+    "coalesced": [
+      "ChavoKartGame/CookedXbox360/Coalesced_ESN.bin"
+    ],
+    "movies": [
+      "ChavoKartGame/Movies/DISCLAIMER01_ESN.BIK"
+    ],
+    "toc": [
+      "ChavoKartGame/Xbox360TOC_ESN.txt"
+    ],
+    "name": "Spanish (Spain)",
+    "default": false
+  },
+  "INT": {
+    "text_packages": [
+      "ChavoKartGame/CookedXbox360/ChavoKartGame_LOC_INT.xxx",
+      "ChavoKartGame/CookedXbox360/PistaMuseo_Arte_LOC_INT.xxx",
+      "ChavoKartGame/CookedXbox360/Startup_LOC_INT.xxx"
+    ],
+    "coalesced": [
+      "ChavoKartGame/CookedXbox360/Coalesced_INT.bin"
+    ],
+    "movies": [],
+    "toc": [],
+    "name": "English (international)",
+    "default": true,
+    "note": "INT is the base language: unsuffixed movies and Xbox360TOC.txt belong to it."
+  },
+  "PTB": {
+    "text_packages": [
+      "ChavoKartGame/CookedXbox360/ChavoKartGame_LOC_PTB.xxx",
+      "ChavoKartGame/CookedXbox360/Startup_LOC_PTB.xxx"
+    ],
+    "coalesced": [
+      "ChavoKartGame/CookedXbox360/Coalesced_PTB.bin"
+    ],
+    "movies": [
+      "ChavoKartGame/Movies/DISCLAIMER01_PTB.BIK"
+    ],
+    "toc": [
+      "ChavoKartGame/Xbox360TOC_PTB.txt"
+    ],
+    "name": "Portuguese (Brazil)",
+    "default": false
+  }
+}

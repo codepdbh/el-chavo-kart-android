@@ -1,0 +1,1234 @@
+{
+ "candidates": [
+  {
+   "address": "0x823F9190",
+   "first_instruction": "lwz r11, 0x7c(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82140528"
+  },
+  {
+   "address": "0x82444F58",
+   "first_instruction": "mr r11, r3",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82151520"
+  },
+  {
+   "address": "0x82468C40",
+   "first_instruction": "lis r11, -0x7c33",
+   "references": 14,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8215DBAC"
+  },
+  {
+   "address": "0x824931C0",
+   "first_instruction": "addi r3, r3, -0x1c4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82162798"
+  },
+  {
+   "address": "0x824931D0",
+   "first_instruction": "addi r3, r3, -0x44",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82162324"
+  },
+  {
+   "address": "0x8249BE80",
+   "first_instruction": "addi r3, r3, -0x44",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82162FF8"
+  },
+  {
+   "address": "0x826C84C0",
+   "first_instruction": "lis r11, -0x7c32",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x821BF7F0"
+  },
+  {
+   "address": "0x828F9D50",
+   "first_instruction": "addi r3, r3, -0x254",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82205150"
+  },
+  {
+   "address": "0x82978B30",
+   "first_instruction": "lwz r7, 0x7c(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8221D354"
+  },
+  {
+   "address": "0x82A3E8E0",
+   "first_instruction": "addi r3, r3, -0x20",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82021F78"
+  },
+  {
+   "address": "0x82A62EE8",
+   "first_instruction": "lis r11, -0x7ddc",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82242CD4"
+  },
+  {
+   "address": "0x82A77A70",
+   "first_instruction": "addi r3, r3, -0xc",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82247048"
+  },
+  {
+   "address": "0x82A77A78",
+   "first_instruction": "addi r3, r3, -0xc",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82246FAC"
+  },
+  {
+   "address": "0x82A8E828",
+   "first_instruction": "lis r11, -0x7ddc",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x822483B0"
+  },
+  {
+   "address": "0x82A9E200",
+   "first_instruction": "addi r3, r3, -0xc",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8224ACC0"
+  },
+  {
+   "address": "0x82AA9780",
+   "first_instruction": "addi r3, r3, -8",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8224C5AC"
+  },
+  {
+   "address": "0x82AFB400",
+   "first_instruction": "li r11, 0x80",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8224E9A8"
+  },
+  {
+   "address": "0x82B0EA88",
+   "first_instruction": "addi r3, r3, -0x10",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82255864"
+  },
+  {
+   "address": "0x82B0EA98",
+   "first_instruction": "addi r3, r3, -0x1c",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82255868"
+  },
+  {
+   "address": "0x82B3F920",
+   "first_instruction": "stw r4, 0xa8(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8225777C"
+  },
+  {
+   "address": "0x82B7E1F8",
+   "first_instruction": "addi r3, r3, -8",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000BDC"
+  },
+  {
+   "address": "0x82B85438",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CB8"
+  },
+  {
+   "address": "0x82B85440",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CB4"
+  },
+  {
+   "address": "0x82B85448",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CF4"
+  },
+  {
+   "address": "0x82B85458",
+   "first_instruction": "lwz r11, 0x4c(r3)",
+   "references": 3,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000D14"
+  },
+  {
+   "address": "0x82B8A9F8",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CCC"
+  },
+  {
+   "address": "0x82B8AA00",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8200106C"
+  },
+  {
+   "address": "0x82B8AA10",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CC0"
+  },
+  {
+   "address": "0x82B8AA18",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CE8"
+  },
+  {
+   "address": "0x82B8AA20",
+   "first_instruction": "lwz r8, 0xb8(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8200108C"
+  },
+  {
+   "address": "0x82B8BDB0",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82001058"
+  },
+  {
+   "address": "0x82B8BDB8",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CB0"
+  },
+  {
+   "address": "0x82B8BDC0",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82001050"
+  },
+  {
+   "address": "0x82B8BDC8",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CC4"
+  },
+  {
+   "address": "0x82B8BDD0",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CC8"
+  },
+  {
+   "address": "0x82B8BDD8",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82001020"
+  },
+  {
+   "address": "0x82B8BDE0",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CE4"
+  },
+  {
+   "address": "0x82B8BDE8",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CEC"
+  },
+  {
+   "address": "0x82B8BDF0",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 5,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82000CBC"
+  },
+  {
+   "address": "0x82B8BDF8",
+   "first_instruction": "mr r11, r3",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82001154"
+  },
+  {
+   "address": "0x82B8C538",
+   "first_instruction": "addi r3, r3, -0x20",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82001188"
+  },
+  {
+   "address": "0x82B8F410",
+   "first_instruction": "lhz r11, 0x28(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8200133C"
+  },
+  {
+   "address": "0x82B917C0",
+   "first_instruction": "addi r3, r3, -0x10",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820013EC"
+  },
+  {
+   "address": "0x82BAEEB8",
+   "first_instruction": "lwz r3, 0x18(r3)",
+   "references": 56,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820060AC"
+  },
+  {
+   "address": "0x82BAF338",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820060EC"
+  },
+  {
+   "address": "0x82BAF340",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820060FC"
+  },
+  {
+   "address": "0x82BB0D18",
+   "first_instruction": "addi r3, r3, -4",
+   "references": 3,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820060A4"
+  },
+  {
+   "address": "0x82C5E620",
+   "first_instruction": "lwz r3, 4(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82029710"
+  },
+  {
+   "address": "0x82CA0C98",
+   "first_instruction": "lwz r11, 0x14(r4)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8202A954"
+  },
+  {
+   "address": "0x82D69B88",
+   "first_instruction": "addi r3, r3, -0x10",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82031BD0"
+  },
+  {
+   "address": "0x82D7B258",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82032E20"
+  },
+  {
+   "address": "0x82D7B260",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82032DF8"
+  },
+  {
+   "address": "0x82D7B298",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82032E18"
+  },
+  {
+   "address": "0x82D7C330",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82032FCC"
+  },
+  {
+   "address": "0x82D854F0",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82032FA4"
+  },
+  {
+   "address": "0x82E379D8",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C260"
+  },
+  {
+   "address": "0x82E37A10",
+   "first_instruction": "addi r3, r3, -0xc",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C248"
+  },
+  {
+   "address": "0x82E37A20",
+   "first_instruction": "addi r3, r3, -0xc",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C240"
+  },
+  {
+   "address": "0x82E37A38",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C21C"
+  },
+  {
+   "address": "0x82E37A50",
+   "first_instruction": "addi r3, r3, -8",
+   "references": 19,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C2B8"
+  },
+  {
+   "address": "0x82E37A68",
+   "first_instruction": "addi r3, r3, -0xc",
+   "references": 4,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C230"
+  },
+  {
+   "address": "0x82E37A78",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C264"
+  },
+  {
+   "address": "0x82E37A88",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C1F8"
+  },
+  {
+   "address": "0x82E37AA8",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C214"
+  },
+  {
+   "address": "0x82E37AB0",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C20C"
+  },
+  {
+   "address": "0x82E37AB8",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C218"
+  },
+  {
+   "address": "0x82E37AD8",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C210"
+  },
+  {
+   "address": "0x82E37AE0",
+   "first_instruction": "addi r3, r3, -8",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C2B4"
+  },
+  {
+   "address": "0x82E37AE8",
+   "first_instruction": "addi r3, r3, -0x20",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C288"
+  },
+  {
+   "address": "0x82E37AF0",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 4,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C204"
+  },
+  {
+   "address": "0x82E37B00",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C25C"
+  },
+  {
+   "address": "0x82E37B10",
+   "first_instruction": "addi r3, r3, -0x24",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C1FC"
+  },
+  {
+   "address": "0x82E37B18",
+   "first_instruction": "addi r3, r3, -8",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C2D4"
+  },
+  {
+   "address": "0x82E37B28",
+   "first_instruction": "addi r3, r3, -8",
+   "references": 9,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C2CC"
+  },
+  {
+   "address": "0x82E3B800",
+   "first_instruction": "addi r3, r3, -0xc",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C6D4"
+  },
+  {
+   "address": "0x82E4D7E0",
+   "first_instruction": "addi r3, r3, -0x20",
+   "references": 7,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C294"
+  },
+  {
+   "address": "0x82E4D7E8",
+   "first_instruction": "addi r3, r3, -0x20",
+   "references": 2,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204CF9C"
+  },
+  {
+   "address": "0x82E51868",
+   "first_instruction": "addi r3, r3, -0x20",
+   "references": 4,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204CF70"
+  },
+  {
+   "address": "0x82E5D0A8",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204CE60"
+  },
+  {
+   "address": "0x82E5D0B8",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204DA90"
+  },
+  {
+   "address": "0x82E613D0",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 3,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204D148"
+  },
+  {
+   "address": "0x82E613D8",
+   "first_instruction": "addi r3, r3, -0x18",
+   "references": 6,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C30C"
+  },
+  {
+   "address": "0x82E8A5B8",
+   "first_instruction": "addi r3, r3, -0x20",
+   "references": 7,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8204C2A8"
+  },
+  {
+   "address": "0x82FA22C8",
+   "first_instruction": "li r5, 1",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82077638"
+  },
+  {
+   "address": "0x82FDAAF8",
+   "first_instruction": "li r3, 0",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82078B30"
+  },
+  {
+   "address": "0x82FDF7A8",
+   "first_instruction": "lbz r3, 8(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x82078C6C"
+  },
+  {
+   "address": "0x830DEE9C",
+   "first_instruction": "lwz r30, 0x7c(r31)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8225B260"
+  },
+  {
+   "address": "0x830DF014",
+   "first_instruction": "li r11, 0",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x8225B270"
+  },
+  {
+   "address": "0x8321E508",
+   "first_instruction": "lwz r10, 0xe4(r3)",
+   "references": 13,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820BD32C"
+  },
+  {
+   "address": "0x83277598",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA750"
+  },
+  {
+   "address": "0x832775F8",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA770"
+  },
+  {
+   "address": "0x83277628",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA780"
+  },
+  {
+   "address": "0x83277678",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7A4"
+  },
+  {
+   "address": "0x83277680",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7A8"
+  },
+  {
+   "address": "0x83277688",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7AC"
+  },
+  {
+   "address": "0x83277690",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7B0"
+  },
+  {
+   "address": "0x832776A0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7B4"
+  },
+  {
+   "address": "0x832776B0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7B8"
+  },
+  {
+   "address": "0x832776C0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7BC"
+  },
+  {
+   "address": "0x832776D0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7C0"
+  },
+  {
+   "address": "0x832776E0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7C4"
+  },
+  {
+   "address": "0x832776F0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7C8"
+  },
+  {
+   "address": "0x83277700",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7CC"
+  },
+  {
+   "address": "0x83277710",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7D0"
+  },
+  {
+   "address": "0x83277750",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7E4"
+  },
+  {
+   "address": "0x83277758",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7E8"
+  },
+  {
+   "address": "0x83277760",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7EC"
+  },
+  {
+   "address": "0x83277768",
+   "first_instruction": "b 0x83295c88",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA7F0"
+  },
+  {
+   "address": "0x83277790",
+   "first_instruction": "mr r6, r7",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA804"
+  },
+  {
+   "address": "0x832777E0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA814"
+  },
+  {
+   "address": "0x832777F8",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA818"
+  },
+  {
+   "address": "0x83277830",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA820"
+  },
+  {
+   "address": "0x83277860",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA828"
+  },
+  {
+   "address": "0x83277878",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA82C"
+  },
+  {
+   "address": "0x83277890",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA830"
+  },
+  {
+   "address": "0x832778C8",
+   "first_instruction": "mr r11, r5",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA838"
+  },
+  {
+   "address": "0x832778E0",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA83C"
+  },
+  {
+   "address": "0x83277990",
+   "first_instruction": "mr r3, r4",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820CA850"
+  },
+  {
+   "address": "0x833010B8",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E180C"
+  },
+  {
+   "address": "0x83304CB8",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E210C"
+  },
+  {
+   "address": "0x83306558",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E287C"
+  },
+  {
+   "address": "0x83307A48",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E2E84"
+  },
+  {
+   "address": "0x83308790",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E3524"
+  },
+  {
+   "address": "0x83309658",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E3C2C"
+  },
+  {
+   "address": "0x8330A538",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E471C"
+  },
+  {
+   "address": "0x8330C658",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E4DAC"
+  },
+  {
+   "address": "0x8330D420",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E5BD4"
+  },
+  {
+   "address": "0x8330FE70",
+   "first_instruction": "stw r4, 0x24(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820E6224"
+  },
+  {
+   "address": "0x8331B5C8",
+   "first_instruction": "addi r3, r3, 0x304",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820EAD10"
+  },
+  {
+   "address": "0x8331BC10",
+   "first_instruction": "lwz r11, 0x174(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820EAD24"
+  },
+  {
+   "address": "0x8333B890",
+   "first_instruction": "addi r3, r3, -0x5c",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820EBB28"
+  },
+  {
+   "address": "0x8333B898",
+   "first_instruction": "addi r3, r3, -0x5c",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820EBB34"
+  },
+  {
+   "address": "0x8333B8A0",
+   "first_instruction": "lis r11, -0x7e00",
+   "references": 20,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820EBBC8"
+  },
+  {
+   "address": "0x833E8AF8",
+   "first_instruction": "lwz r3, 0x38(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820FB908"
+  },
+  {
+   "address": "0x833E8B00",
+   "first_instruction": "lwz r3, 0x38(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820FB90C"
+  },
+  {
+   "address": "0x833E8B08",
+   "first_instruction": "lwz r3, 0x34(r3)",
+   "references": 1,
+   "sections": [
+    ".rdata"
+   ],
+   "first_reference": "0x820FB918"
+  }
+ ],
+ "rejected": {
+  "SEH scope table": 63,
+  "previous instruction falls through": 137,
+  "internal label": 39,
+  "not valid code": 14
+ }
+}

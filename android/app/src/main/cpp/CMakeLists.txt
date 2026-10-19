@@ -1,0 +1,31 @@
+# Native libraries of the diagnostic APK (no recompiled game):
+#   libckdiag.so  SDL3 + Vulkan 1.1 clear/present loop with lifecycle handling (VulkanTestActivity)
+#   libckprobe.so JNI Vulkan capability probe (GpuProbeActivity, isolated :probe process)
+cmake_minimum_required(VERSION 3.25)
+project(chavokart_diagnostic LANGUAGES C CXX)
+if(NOT ANDROID OR NOT ANDROID_ABI STREQUAL "arm64-v8a")
+    message(FATAL_ERROR "The Android build targets arm64-v8a only")
+endif()
+if(NOT CK_SDK_ROOT)
+    message(FATAL_ERROR "CK_SDK_ROOT (references/nfsmw-android/sdk) is required")
+endif()
+set(SDL_SHARED ON CACHE BOOL "" FORCE)
+set(SDL_STATIC OFF CACHE BOOL "" FORCE)
+set(SDL_TEST_LIBRARY OFF CACHE BOOL "" FORCE)
+add_subdirectory("${CK_SDK_ROOT}/thirdparty/sdl3" sdl3 EXCLUDE_FROM_ALL)
+
+set(CK_WARNINGS -Wall -Wextra -Wno-missing-field-initializers)
+add_library(ckdiag SHARED android_main.cpp android_logging.cpp vulkan_context.cpp gpu_quirks.cpp)
+target_compile_features(ckdiag PRIVATE cxx_std_20)
+target_compile_options(ckdiag PRIVATE ${CK_WARNINGS})
+target_link_libraries(ckdiag PRIVATE SDL3::SDL3 vulkan android log)
+
+add_library(ckprobe SHARED vulkan_probe.cpp)
+target_compile_features(ckprobe PRIVATE cxx_std_20)
+target_compile_options(ckprobe PRIVATE ${CK_WARNINGS})
+target_link_libraries(ckprobe PRIVATE vulkan log)
+
+# 16 KB page compatibility (Android 15+ devices with 16 KB pages).
+foreach(lib ckdiag ckprobe)
+    target_link_options(${lib} PRIVATE "-Wl,-z,max-page-size=16384")
+endforeach()

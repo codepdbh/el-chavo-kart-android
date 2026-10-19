@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">El Chavo Kart — Android Evolved</string>
+    <string name="launcher_title">EL CHAVO KART</string>
+    <string name="launcher_subtitle">ANDROID EVOLVED</string>
+    <string name="tagline">Xbox 360 · código original recompilado para ARM64</string>
+    <string name="build_diagnostic">Build de diagnóstico: o jogo recompilado ainda não roda no Android.</string>
+    <string name="build_game">Runtime experimental do jogo incluído.</string>
+
+    <string name="btn_play">JOGAR</string>
+    <string name="btn_import">IMPORTAR JOGO</string>
+    <string name="btn_cancel_import">Cancelar importação</string>
+    <string name="play_unavailable_build">JOGAR não está disponível no build de diagnóstico.</string>
+    <string name="play_unavailable_files">Importe a sua cópia do jogo para habilitar JOGAR.</string>
+
+    <string name="section_files">ARQUIVOS DO JOGO</string>
+    <string name="files_none">Nenhum dado importado. Escolha a pasta da sua cópia extraída (por exemplo /sdcard/ELCHAVOKART) que contém default.xex.</string>
+    <string name="files_ok">✓ Cópia reconhecida: El Chavo Kart (Xbox 360) v0.0.0.3 · Title ID 475807D7</string>
+    <string name="files_checking">Verificando default.xex (SHA-256)…</string>
+    <string name="files_scanning">Contando arquivos e espaço necessário…</string>
+    <string name="files_progress">Importando %1$s de %2$s (%3$d %%)</string>
+    <string name="files_done">Importação concluída e verificada.</string>
+    <string name="files_cancelled">Importação cancelada. A cópia anterior foi mantida.</string>
+    <string name="files_languages">Idiomas de texto na sua cópia: %1$s</string>
+
+    <string name="section_language">IDIOMA</string>
+    <string name="ui_language">Idioma do launcher</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_en">English</string>
+    <string name="lang_pt_br">Português do Brasil</string>
+    <string name="game_text_language">Texto do jogo</string>
+    <string name="game_text_pending">Idiomas detectados: %1$s. A seleção será ativada quando o runtime aplicar o idioma ao motor UE3 (ainda não verificado).</string>
+    <string name="game_text_unknown">Importe o jogo para detectar os idiomas.</string>
+    <string name="voice_language">Idioma das vozes</string>
+    <string name="voice_pending">Pendente: os bancos de vozes FMOD ainda não foram identificados por idioma. Nenhuma opção não verificada é oferecida.</string>
+    <string name="game_lang_INT">Inglês (INT)</string>
+    <string name="game_lang_ESN">Espanhol da Espanha (ESN)</string>
+    <string name="game_lang_ESM">Espanhol latino-americano (ESM)</string>
+    <string name="game_lang_PTB">Português do Brasil (PTB)</string>
+
+    <string name="section_driver">DRIVER VULKAN</string>
+    <string name="driver_current">Driver ativo: %1$s</string>
+    <string name="driver_system">Driver do sistema</string>
+    <string name="driver_import">Importar driver ZIP</string>
+    <string name="driver_select">Selecionar driver importado</string>
+    <string name="driver_test">Testar driver</string>
+    <string name="driver_info">Informações do driver</string>
+    <string name="driver_restore">Restaurar driver do sistema</string>
+    <string name="driver_delete">Excluir driver importado</string>
+    <string name="driver_none_imported">Nenhum driver importado.</string>
+    <string name="driver_imported">Driver importado: %1$s. Ele é usado somente dentro do processo do jogo.</string>
+    <string name="driver_restored">O driver do sistema será usado.</string>
+    <string name="driver_deleted">Driver excluído: %1$s</string>
+    <string name="driver_test_needs_runtime">O teste com um driver importado precisa do build com o runtime do jogo (carregado com libadrenotools em um processo isolado). Este build testa somente o driver do sistema.</string>
+    <string name="driver_note">Drivers não são intercambiáveis entre famílias de GPU. Turnip só é oferecido em Adreno; PanVK em Mali é experimental; Xclipse usa o driver do sistema. O driver do celular nunca é modificado.</string>
+    <string name="driver_info_text">Nome: %1$s\nBiblioteca: %2$s\nDescrição: %3$s</string>
+
+    <string name="section_diagnostics">DIAGNÓSTICO</string>
+    <string name="btn_gpu_probe">Diagnóstico de GPU</string>
+    <string name="btn_vulkan_test">Teste Vulkan (sem jogo)</string>
+    <string name="btn_device_info">Informações do dispositivo</string>
+    <string name="btn_view_log">Registro de erros</string>
+    <string name="btn_export_report">ENVIAR CRASH OU LOG</string>
+    <string name="btn_clear_cache">Limpar cache</string>
+    <string name="btn_credits">Créditos e licenças</string>
+    <string name="probe_running">Executando o diagnóstico de GPU em um processo isolado…</string>
+    <string name="probe_crashed">O diagnóstico de GPU fechou inesperadamente. O launcher continua funcionando; o driver do sistema será usado.</string>
+    <string name="probe_title">Diagnóstico Vulkan</string>
+    <string name="probe_summary">GPU: %1$s (%2$s)\nVulkan: %3$s · Driver: %4$s\nIDs: vendor %5$s · device %6$s\nDescriptor sets: %7$s · Descriptor indexing: %8$s\nBC1/BC3/BC5: %9$s / %10$s / %11$s\nshaderInt64: %12$s\n\n%13$s</string>
+    <string name="probe_baseline_ok">Requisitos básicos (Vulkan 1.1, swapchain, fila gráfica) disponíveis. O jogo ainda não foi validado neste dispositivo: NÃO VERIFICADO.</string>
+    <string name="probe_baseline_missing">Faltam requisitos básicos: %1$s</string>
+    <string name="device_info_title">Informações do dispositivo</string>
+    <string name="log_title">Registro</string>
+    <string name="log_empty">Ainda não há registros.</string>
+    <string name="report_saved">Pacote de diagnóstico salvo. Nada foi enviado para a Internet.</string>
+    <string name="report_contents">O ZIP inclui registros do app, o diagnóstico de GPU e dados técnicos do dispositivo. Não inclui arquivos do jogo, dumps de memória nem dados pessoais.</string>
+    <string name="cache_cleared">Cache limpo (%1$s).</string>
+    <string name="credits_text">El Chavo Kart — Android Evolved\nProjeto independente de pesquisa de compatibilidade e preservação. Desenvolvido por codepdbh.\n\nBaseado em ReXGlue SDK (BSD-3, com partes do Xenia), NFSMW Android Evolved, NFS Carbon 360 Android Recomp e The Simpsons Game Android (GPLv3), SDL3 (zlib) e Vulkan.\n\nNão inclui o jogo nem seus recursos. El Chavo Kart e suas marcas pertencem aos respectivos proprietários.</string>
+
+    <string name="status_gamepad">Controle: %1$s</string>
+    <string name="status_gamepad_none">Controle: nenhum conectado</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_confirm_delete">Excluir %1$s?</string>
+
+    <string name="error_unexpected">Erro inesperado: %1$s</string>
+    <string name="error_create_folder">Não foi possível criar uma pasta no armazenamento privado.</string>
+    <string name="error_delete">Não foi possível excluir %1$s.</string>
+    <string name="game_error_no_xex">default.xex não foi encontrado na pasta escolhida nem nas subpastas.</string>
+    <string name="game_error_unsupported">Esta versão de default.xex não é suportada.\nSHA-256: %1$s\nO código recompilado só é válido para a revisão verificada.</string>
+    <string name="game_error_space">Espaço insuficiente: são necessários %1$s livres.</string>
+    <string name="game_error_bad_name">A pasta contém um nome de arquivo inválido.</string>
+    <string name="game_error_enumerate">Não foi possível ler a pasta escolhida. Conceda o acesso novamente.</string>
+    <string name="game_error_open">Não foi possível abrir %1$s.</string>
+    <string name="game_error_nesting">A pasta tem níveis de subpastas demais.</string>
+    <string name="game_error_activate">Não foi possível ativar a cópia importada.</string>
+    <string name="game_error_permission">Não foi possível manter a permissão da pasta.</string>
+
+    <string name="driver_error_too_many_files">O ZIP contém arquivos demais.</string>
+    <string name="driver_error_bad_path">O ZIP contém caminhos inválidos, repetidos ou links.</string>
+    <string name="driver_error_too_large">O pacote do driver é grande demais.</string>
+    <string name="driver_error_not_arm64">O driver deve ser uma biblioteca Android ARM64 (.so), não de PC nem de 32 bits.</string>
+    <string name="driver_error_android_version">Este driver precisa de uma versão mais recente do Android (mínimo Android 9).</string>
+    <string name="driver_error_probe_first">Execute primeiro o Diagnóstico de GPU para identificar a família da sua GPU.</string>
+    <string name="driver_error_open_zip">Não foi possível abrir o ZIP.</string>
+    <string name="driver_error_no_meta">Falta meta.json no ZIP do driver.</string>
+    <string name="driver_error_bad_meta">meta.json não é válido.</string>
+    <string name="driver_error_ambiguous">Há vários meta.json: o pacote é ambíguo.</string>
+    <string name="driver_error_turnip_family">Turnip só é compatível com GPUs Adreno. Sua GPU: %1$s.</string>
+    <string name="driver_error_panvk_family">PanVK é somente para GPUs Mali. Sua GPU: %1$s.</string>
+    <string name="driver_error_xclipse">GPUs Xclipse usam o driver do sistema; não há drivers externos verificados.</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">El Chavo Kart — Android Evolved</string>
+    <string name="launcher_title">EL CHAVO KART</string>
+    <string name="launcher_subtitle">ANDROID EVOLVED</string>
+    <string name="tagline">Xbox 360 · original code recompiled for ARM64</string>
+    <string name="build_diagnostic">Diagnostic build: the recompiled game does not run on Android yet.</string>
+    <string name="build_game">Experimental game runtime included.</string>
+
+    <string name="btn_play">PLAY</string>
+    <string name="btn_import">IMPORT GAME</string>
+    <string name="btn_cancel_import">Cancel import</string>
+    <string name="play_unavailable_build">PLAY is not available in the diagnostic build.</string>
+    <string name="play_unavailable_files">Import your copy of the game to enable PLAY.</string>
+
+    <string name="section_files">GAME FILES</string>
+    <string name="files_none">No data imported. Choose the folder of your extracted copy (for example /sdcard/ELCHAVOKART) that contains default.xex.</string>
+    <string name="files_ok">✓ Copy recognized: El Chavo Kart (Xbox 360) v0.0.0.3 · Title ID 475807D7</string>
+    <string name="files_checking">Checking default.xex (SHA-256)…</string>
+    <string name="files_scanning">Counting files and required space…</string>
+    <string name="files_progress">Importing %1$s of %2$s (%3$d %%)</string>
+    <string name="files_done">Import finished and verified.</string>
+    <string name="files_cancelled">Import cancelled. The previous copy is kept.</string>
+    <string name="files_languages">Text languages in your copy: %1$s</string>
+
+    <string name="section_language">LANGUAGE</string>
+    <string name="ui_language">Launcher language</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_en">English</string>
+    <string name="lang_pt_br">Português do Brasil</string>
+    <string name="game_text_language">Game text</string>
+    <string name="game_text_pending">Detected languages: %1$s. Selection will be enabled once the runtime applies the language to the UE3 engine (not verified yet).</string>
+    <string name="game_text_unknown">Import the game to detect its languages.</string>
+    <string name="voice_language">Voice language</string>
+    <string name="voice_pending">Pending: the FMOD voice banks are not identified by language yet. No unverified option is offered.</string>
+    <string name="game_lang_INT">English (INT)</string>
+    <string name="game_lang_ESN">Spanish, Spain (ESN)</string>
+    <string name="game_lang_ESM">Spanish, Latin America (ESM)</string>
+    <string name="game_lang_PTB">Portuguese, Brazil (PTB)</string>
+
+    <string name="section_driver">VULKAN DRIVER</string>
+    <string name="driver_current">Active driver: %1$s</string>
+    <string name="driver_system">System driver</string>
+    <string name="driver_import">Import driver ZIP</string>
+    <string name="driver_select">Select imported driver</string>
+    <string name="driver_test">Test driver</string>
+    <string name="driver_info">Driver information</string>
+    <string name="driver_restore">Restore system driver</string>
+    <string name="driver_delete">Delete imported driver</string>
+    <string name="driver_none_imported">No imported drivers.</string>
+    <string name="driver_imported">Driver imported: %1$s. It is only used inside the game process.</string>
+    <string name="driver_restored">The system driver will be used.</string>
+    <string name="driver_deleted">Driver deleted: %1$s</string>
+    <string name="driver_test_needs_runtime">Testing an imported driver needs the build with the game runtime (loaded with libadrenotools in an isolated process). This build only tests the system driver.</string>
+    <string name="driver_note">Drivers are not interchangeable between GPU families. Turnip is only offered on Adreno; PanVK on Mali is experimental; Xclipse uses the system driver. The phone driver is never modified.</string>
+    <string name="driver_info_text">Name: %1$s\nLibrary: %2$s\nDescription: %3$s</string>
+
+    <string name="section_diagnostics">DIAGNOSTICS</string>
+    <string name="btn_gpu_probe">GPU diagnostics</string>
+    <string name="btn_vulkan_test">Vulkan test (no game)</string>
+    <string name="btn_device_info">Device information</string>
+    <string name="btn_view_log">Error log</string>
+    <string name="btn_export_report">SEND CRASH OR LOG</string>
+    <string name="btn_clear_cache">Clear cache</string>
+    <string name="btn_credits">Credits and licenses</string>
+    <string name="probe_running">Running GPU diagnostics in an isolated process…</string>
+    <string name="probe_crashed">GPU diagnostics closed unexpectedly. The launcher keeps working; the system driver will be used.</string>
+    <string name="probe_title">Vulkan diagnostics</string>
+    <string name="probe_summary">GPU: %1$s (%2$s)\nVulkan: %3$s · Driver: %4$s\nIDs: vendor %5$s · device %6$s\nDescriptor sets: %7$s · Descriptor indexing: %8$s\nBC1/BC3/BC5: %9$s / %10$s / %11$s\nshaderInt64: %12$s\n\n%13$s</string>
+    <string name="probe_baseline_ok">Basic requirements (Vulkan 1.1, swapchain, graphics queue) available. The game has not been validated on this device yet: NOT VERIFIED.</string>
+    <string name="probe_baseline_missing">Missing basic requirements: %1$s</string>
+    <string name="device_info_title">Device information</string>
+    <string name="log_title">Log</string>
+    <string name="log_empty">No logs yet.</string>
+    <string name="report_saved">Diagnostic package saved. Nothing was sent to the Internet.</string>
+    <string name="report_contents">The ZIP includes app logs, GPU diagnostics and technical device data. It does not include game files, memory dumps or personal data.</string>
+    <string name="cache_cleared">Cache cleared (%1$s).</string>
+    <string name="credits_text">El Chavo Kart — Android Evolved\nIndependent compatibility and preservation research project. Developed by codepdbh.\n\nBased on ReXGlue SDK (BSD-3, with parts of Xenia), NFSMW Android Evolved, NFS Carbon 360 Android Recomp and The Simpsons Game Android (GPLv3), SDL3 (zlib) and Vulkan.\n\nThe game and its assets are not included. El Chavo Kart and its trademarks belong to their respective owners.</string>
+
+    <string name="status_gamepad">Controller: %1$s</string>
+    <string name="status_gamepad_none">Controller: none connected</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_confirm_delete">Delete %1$s?</string>
+
+    <string name="error_unexpected">Unexpected error: %1$s</string>
+    <string name="error_create_folder">Could not create a folder in private storage.</string>
+    <string name="error_delete">Could not delete %1$s.</string>
+    <string name="game_error_no_xex">default.xex was not found in the chosen folder or its subfolders.</string>
+    <string name="game_error_unsupported">This default.xex version is not supported.\nSHA-256: %1$s\nThe recompiled code is only valid for the verified revision.</string>
+    <string name="game_error_space">Not enough space: %1$s free are required.</string>
+    <string name="game_error_bad_name">The folder contains an invalid file name.</string>
+    <string name="game_error_enumerate">The chosen folder could not be read. Grant access again.</string>
+    <string name="game_error_open">Could not open %1$s.</string>
+    <string name="game_error_nesting">The folder has too many subfolder levels.</string>
+    <string name="game_error_activate">The imported copy could not be activated.</string>
+    <string name="game_error_permission">The folder permission could not be kept.</string>
+
+    <string name="driver_error_too_many_files">The ZIP contains too many files.</string>
+    <string name="driver_error_bad_path">The ZIP contains invalid or repeated paths, or links.</string>
+    <string name="driver_error_too_large">The driver package is too large.</string>
+    <string name="driver_error_not_arm64">The driver must be an Android ARM64 library (.so), not a PC or 32-bit one.</string>
+    <string name="driver_error_android_version">This driver needs a newer Android version (Android 9 minimum).</string>
+    <string name="driver_error_probe_first">Run GPU diagnostics first to identify your GPU family.</string>
+    <string name="driver_error_open_zip">The ZIP could not be opened.</string>
+    <string name="driver_error_no_meta">meta.json is missing from the driver ZIP.</string>
+    <string name="driver_error_bad_meta">meta.json is not valid.</string>
+    <string name="driver_error_ambiguous">There are several meta.json files: the package is ambiguous.</string>
+    <string name="driver_error_turnip_family">Turnip only supports Adreno GPUs. Your GPU: %1$s.</string>
+    <string name="driver_error_panvk_family">PanVK is only for Mali GPUs. Your GPU: %1$s.</string>
+    <string name="driver_error_xclipse">Xclipse GPUs use the system driver; there are no verified external drivers.</string>
+</resources>

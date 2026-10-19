@@ -1,0 +1,3246 @@
+{
+  "file": "default.xex",
+  "size": 30003200,
+  "sha256": "1db4e96b413d5629206ffe63e73c0e1cfaca9eea24bcf6fced6db9b135ce120f",
+  "format": "XEX2",
+  "module_flags": "0x00000001",
+  "module_type": [
+    "title"
+  ],
+  "optional_headers": [
+    {
+      "key": "0x000002FF",
+      "name": "RESOURCE_INFO",
+      "value": "0x00002EA4"
+    },
+    {
+      "key": "0x000003FF",
+      "name": "FILE_FORMAT_INFO",
+      "value": "0x00002EB8"
+    },
+    {
+      "key": "0x00010100",
+      "name": "ENTRY_POINT",
+      "value": "0x830DB568"
+    },
+    {
+      "key": "0x00010201",
+      "name": "IMAGE_BASE_ADDRESS",
+      "value": "0x82000000"
+    },
+    {
+      "key": "0x000103FF",
+      "name": "IMPORT_LIBRARIES",
+      "value": "0x00004628"
+    },
+    {
+      "key": "0x00018002",
+      "name": "CHECKSUM_TIMESTAMP",
+      "value": "0x00002ED8"
+    },
+    {
+      "key": "0x000183FF",
+      "name": "ORIGINAL_PE_NAME",
+      "value": "0x00002EE0"
+    },
+    {
+      "key": "0x000200FF",
+      "name": "STATIC_LIBRARIES",
+      "value": "0x00002F08"
+    },
+    {
+      "key": "0x00020104",
+      "name": "TLS_INFO",
+      "value": "0x0000305C"
+    },
+    {
+      "key": "0x00020200",
+      "name": "DEFAULT_STACK_SIZE",
+      "value": "0x00040000"
+    },
+    {
+      "key": "0x00030000",
+      "name": "SYSTEM_FLAGS",
+      "value": "0x00004600"
+    },
+    {
+      "key": "0x00040006",
+      "name": "EXECUTION_INFO",
+      "value": "0x0000306C"
+    },
+    {
+      "key": "0x00040201",
+      "name": "GAME_RATINGS?",
+      "value": "0x00100000"
+    },
+    {
+      "key": "0x00040310",
+      "name": "GAME_RATINGS",
+      "value": "0x00003084"
+    },
+    {
+      "key": "0x00040404",
+      "name": "LAN_KEY",
+      "value": "0x000030C4"
+    },
+    {
+      "key": "0x000405FF",
+      "name": "XBOX360_LOGO",
+      "value": "0x000030D4"
+    }
+  ],
+  "image_base": "0x82000000",
+  "entry_point": "0x830DB568",
+  "default_stack_size": 262144,
+  "system_flags": "0x00004600",
+  "original_pe_name": "ChavoKartGame-Xbox360-Shipping.pe",
+  "execution_info": {
+    "media_id": "5C2ECDD6",
+    "version": "0.0.0.3",
+    "base_version": "0.0.0.3",
+    "title_id": "475807D7",
+    "publisher_code": "GX",
+    "game_number": 2007,
+    "platform": 0,
+    "executable_type": 0,
+    "disc_number": 1,
+    "disc_count": 1,
+    "savegame_id": "00000000"
+  },
+  "tls": {
+    "slot_count": 64,
+    "raw_data_address": "0x00000000",
+    "data_size": 0,
+    "raw_data_size": 0
+  },
+  "checksum": "0x01D6BA29",
+  "link_timestamp_utc": "2013-11-28T17:24:27+00:00",
+  "static_libraries": [
+    {
+      "name": "XGRAPHC",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XNET",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XONLINE",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XMP",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XAPOBA",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XAUDIO2",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XAPOFX",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "D3DX9",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "LIBCMT",
+      "version": "2.0.11886.0",
+      "approval": "unapproved"
+    },
+    {
+      "name": "XAPILIB",
+      "version": "2.0.21250.6",
+      "approval": "approved"
+    },
+    {
+      "name": "XPARTY",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XHV2",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XMCORE",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XBOXKRNL",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XMIC",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "XWMAD",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "X3DAUDL",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "D3D9LTCG",
+      "version": "2.0.21250.0",
+      "approval": "approved"
+    },
+    {
+      "name": "LINK",
+      "version": "10.0.11886.0",
+      "approval": "approved"
+    },
+    {
+      "name": "C2",
+      "version": "16.0.11886.0",
+      "approval": "approved"
+    },
+    {
+      "name": "C1",
+      "version": "16.0.11886.0",
+      "approval": "approved"
+    }
+  ],
+  "resources": [
+    {
+      "name": "475807D7",
+      "address": "0x83D2F680",
+      "size": 496880
+    }
+  ],
+  "security": {
+    "image_size": 31129600,
+    "image_flags": "0x00000008",
+    "load_address": "0x82000000",
+    "region_mask": "0xFFFFFFFF",
+    "regions": [
+      "ALL"
+    ],
+    "allowed_media_mask": "0x00000004",
+    "page_size": 65536,
+    "import_table_count": 2,
+    "page_ranges": [
+      {
+        "start": "0x82000000",
+        "end": "0x822D0000",
+        "size": 2949120,
+        "type": "readonly"
+      },
+      {
+        "start": "0x822D0000",
+        "end": "0x834F0000",
+        "size": 19005440,
+        "type": "code"
+      },
+      {
+        "start": "0x834F0000",
+        "end": "0x83DB0000",
+        "size": 9175040,
+        "type": "data"
+      }
+    ]
+  },
+  "key": "retail",
+  "encryption": "AES-128 (retail key)",
+  "compression": "basic (zero-fill blocks)",
+  "image_sha256": "14ea6c13d5217023b1af50ac86dbf1a10598ddb119313dd8d14c762113907719",
+  "pe": {
+    "machine": "0x01F2",
+    "timestamp": 1385659467,
+    "timestamp_utc": "2013-11-28T17:24:27+00:00",
+    "sections": [
+      {
+        "name": ".rdata",
+        "address": "0x82000600",
+        "virtual_size": 2469372,
+        "raw_size": 2469376,
+        "characteristics": "0x40000040",
+        "executable": false,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": ".pdata",
+        "address": "0x8225B400",
+        "virtual_size": 418928,
+        "raw_size": 419328,
+        "characteristics": "0x40000040",
+        "executable": false,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": "BINKCONS",
+        "address": "0x822C1A00",
+        "virtual_size": 10560,
+        "raw_size": 10752,
+        "characteristics": "0x40000040",
+        "executable": false,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": ".text",
+        "address": "0x822D0000",
+        "virtual_size": 18920440,
+        "raw_size": 18920448,
+        "characteristics": "0x60000020",
+        "executable": true,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": "BINK",
+        "address": "0x834DB400",
+        "virtual_size": 79360,
+        "raw_size": 79360,
+        "characteristics": "0x60000020",
+        "executable": true,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": "RADCODE",
+        "address": "0x834EEA00",
+        "virtual_size": 2804,
+        "raw_size": 3072,
+        "characteristics": "0x60000020",
+        "executable": true,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": "BINKBSS",
+        "address": "0x834F0000",
+        "virtual_size": 24520,
+        "raw_size": 0,
+        "characteristics": "0xC0000080",
+        "executable": false,
+        "writable": true,
+        "readable": true
+      },
+      {
+        "name": ".data",
+        "address": "0x834F6000",
+        "virtual_size": 8611808,
+        "raw_size": 7455744,
+        "characteristics": "0xC0000040",
+        "executable": false,
+        "writable": true,
+        "readable": true
+      },
+      {
+        "name": ".XBMOVIE",
+        "address": "0x83D2C800",
+        "virtual_size": 12,
+        "raw_size": 512,
+        "characteristics": "0xC0000040",
+        "executable": false,
+        "writable": true,
+        "readable": true
+      },
+      {
+        "name": "BINKDATA",
+        "address": "0x83D2CA00",
+        "virtual_size": 11120,
+        "raw_size": 11264,
+        "characteristics": "0xC0000040",
+        "executable": false,
+        "writable": true,
+        "readable": true
+      },
+      {
+        "name": "RADDATA",
+        "address": "0x83D2F600",
+        "virtual_size": 36,
+        "raw_size": 512,
+        "characteristics": "0xC0000040",
+        "executable": false,
+        "writable": true,
+        "readable": true
+      },
+      {
+        "name": ".edata",
+        "address": "0x83D30000",
+        "virtual_size": 1014,
+        "raw_size": 1024,
+        "characteristics": "0x40000040",
+        "executable": false,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": ".idata",
+        "address": "0x83D40000",
+        "virtual_size": 1348,
+        "raw_size": 1536,
+        "characteristics": "0xC0000040",
+        "executable": false,
+        "writable": true,
+        "readable": true
+      },
+      {
+        "name": ".XBLD",
+        "address": "0x83D50000",
+        "virtual_size": 336,
+        "raw_size": 512,
+        "characteristics": "0x42000040",
+        "executable": false,
+        "writable": false,
+        "readable": true
+      },
+      {
+        "name": ".reloc",
+        "address": "0x83D50200",
+        "virtual_size": 1458360,
+        "raw_size": 1458688,
+        "characteristics": "0x42000040",
+        "executable": false,
+        "writable": false,
+        "readable": true
+      }
+    ]
+  },
+  "code_statistics": {
+    "instructions": 4750651,
+    "blr": 47812,
+    "mflr_r12": 51981,
+    "bctr": 3150,
+    "bl": 254433
+  },
+  "imports": [
+    {
+      "name": "xboxkrnl.exe",
+      "version": "2.0.21250.0",
+      "min_version": "2.0.16202.0",
+      "imports": [
+        {
+          "ordinal": 1,
+          "variable_address": "0x82000928",
+          "thunk_address": "0x834DAD64",
+          "name": "DbgBreakPoint",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_debug.cpp"
+        },
+        {
+          "ordinal": 3,
+          "variable_address": "0x82000940",
+          "thunk_address": "0x834DADA4",
+          "name": "DbgPrint",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_strings.cpp"
+        },
+        {
+          "ordinal": 9,
+          "variable_address": "0x82000910",
+          "thunk_address": "0x834DAD04",
+          "name": "ExAllocatePool",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 10,
+          "variable_address": "0x82000AC4",
+          "thunk_address": "0x834DB354",
+          "name": "ExAllocatePoolWithTag",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 11,
+          "variable_address": "0x820009A0",
+          "thunk_address": "0x834DAF14",
+          "name": "ExAllocatePoolTypeWithTag",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 13,
+          "variable_address": "0x82000984",
+          "thunk_address": "0x834DAEA4",
+          "name": "ExCreateThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 14,
+          "variable_address": "0x8200087C",
+          "thunk_address": null,
+          "name": "ExEventObjectType",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 15,
+          "variable_address": "0x8200090C",
+          "thunk_address": "0x834DACF4",
+          "name": "ExFreePool",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 16,
+          "variable_address": "0x820007EC",
+          "thunk_address": "0x834DA8C4",
+          "name": "ExGetXConfigSetting",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_xconfig.cpp"
+        },
+        {
+          "ordinal": 21,
+          "variable_address": "0x82000828",
+          "thunk_address": "0x834DA9B4",
+          "name": "ExRegisterTitleTerminateNotification",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 25,
+          "variable_address": "0x82000960",
+          "thunk_address": "0x834DAE14",
+          "name": "ExTerminateThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 27,
+          "variable_address": "0x82000864",
+          "thunk_address": null,
+          "name": "ExThreadObjectType",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 33,
+          "variable_address": "0x82000918",
+          "thunk_address": "0x834DAD24",
+          "name": "FscSetCacheElementCount",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 40,
+          "variable_address": "0x820009E8",
+          "thunk_address": "0x834DB034",
+          "name": "HalReturnToFirmware",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_hal.cpp"
+        },
+        {
+          "ordinal": 43,
+          "variable_address": "0x820009F4",
+          "thunk_address": "0x834DB064",
+          "name": "InterlockedFlushSList",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 44,
+          "variable_address": "0x820009F0",
+          "thunk_address": "0x834DB054",
+          "name": "InterlockedPopEntrySList",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 52,
+          "variable_address": "0x820009BC",
+          "thunk_address": "0x834DAF84",
+          "name": "IoCheckShareAccess",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 53,
+          "variable_address": "0x820009A4",
+          "thunk_address": "0x834DAF24",
+          "name": "IoCompleteRequest",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 55,
+          "variable_address": "0x82000994",
+          "thunk_address": "0x834DAEE4",
+          "name": "IoCreateDevice",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 57,
+          "variable_address": "0x82000998",
+          "thunk_address": "0x834DAEF4",
+          "name": "IoDeleteDevice",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 59,
+          "variable_address": "0x820009D8",
+          "thunk_address": "0x834DAFF4",
+          "name": "IoDismountVolume",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 60,
+          "variable_address": "0x820009EC",
+          "thunk_address": "0x834DB044",
+          "name": "IoDismountVolumeByFileHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 65,
+          "variable_address": "0x82000988",
+          "thunk_address": "0x834DAEB4",
+          "name": "IoInvalidDeviceRequest",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 69,
+          "variable_address": "0x820009C4",
+          "thunk_address": "0x834DAFA4",
+          "name": "IoRemoveShareAccess",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 71,
+          "variable_address": "0x820009C0",
+          "thunk_address": "0x834DAF94",
+          "name": "IoSetShareAccess",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 77,
+          "variable_address": "0x82000A1C",
+          "thunk_address": "0x834DB0E4",
+          "name": "KeAcquireSpinLockAtRaisedIrql",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 82,
+          "variable_address": "0x82000844",
+          "thunk_address": "0x834DAA24",
+          "name": "KeBugCheck",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_debug.cpp"
+        },
+        {
+          "ordinal": 83,
+          "variable_address": "0x82000958",
+          "thunk_address": "0x834DADF4",
+          "name": "KeBugCheckEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_debug.cpp"
+        },
+        {
+          "ordinal": 89,
+          "variable_address": "0x82000874",
+          "thunk_address": null,
+          "name": "KeDebugMonitorData",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 90,
+          "variable_address": "0x82000878",
+          "thunk_address": "0x834DAAD4",
+          "name": "KeDelayExecutionThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 93,
+          "variable_address": "0x8200083C",
+          "thunk_address": "0x834DAA04",
+          "name": "KeEnableFpuExceptions",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_misc.cpp"
+        },
+        {
+          "ordinal": 95,
+          "variable_address": "0x8200082C",
+          "thunk_address": "0x834DA9C4",
+          "name": "KeEnterCriticalRegion",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 102,
+          "variable_address": "0x820007F4",
+          "thunk_address": "0x834DA8E4",
+          "name": "KeGetCurrentProcessType",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 107,
+          "variable_address": "0x82000A40",
+          "thunk_address": "0x834DB164",
+          "name": "KeLockL2",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 108,
+          "variable_address": "0x82000A44",
+          "thunk_address": "0x834DB174",
+          "name": "KeUnlockL2",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 109,
+          "variable_address": "0x82000AC0",
+          "thunk_address": "0x834DB344",
+          "name": "KeInitializeApc",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 111,
+          "variable_address": "0x82000A3C",
+          "thunk_address": "0x834DB154",
+          "name": "KeInitializeDpc",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 122,
+          "variable_address": "0x82000AC8",
+          "thunk_address": "0x834DB364",
+          "name": "KeInsertQueueApc",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 123,
+          "variable_address": "0x82000A10",
+          "thunk_address": "0x834DB0B4",
+          "name": "KeInsertQueueDpc",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 125,
+          "variable_address": "0x82000824",
+          "thunk_address": "0x834DA9A4",
+          "name": "KeLeaveCriticalRegion",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 129,
+          "variable_address": "0x82000868",
+          "thunk_address": "0x834DAAA4",
+          "name": "KeQueryBasePriorityThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 131,
+          "variable_address": "0x82000810",
+          "thunk_address": "0x834DA954",
+          "name": "KeQueryPerformanceFrequency",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 132,
+          "variable_address": "0x82000914",
+          "thunk_address": "0x834DAD14",
+          "name": "KeQuerySystemTime",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 137,
+          "variable_address": "0x82000A0C",
+          "thunk_address": "0x834DB0A4",
+          "name": "KeReleaseSpinLockFromRaisedIrql",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 143,
+          "variable_address": "0x820009E4",
+          "thunk_address": "0x834DB024",
+          "name": "KeResetEvent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 151,
+          "variable_address": "0x82000870",
+          "thunk_address": "0x834DAAC4",
+          "name": "KeSetAffinityThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 153,
+          "variable_address": "0x8200085C",
+          "thunk_address": "0x834DAA84",
+          "name": "KeSetBasePriorityThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 154,
+          "variable_address": "0x82000A38",
+          "thunk_address": "0x834DB144",
+          "name": "KeSetCurrentProcessType",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 157,
+          "variable_address": "0x82000814",
+          "thunk_address": "0x834DA964",
+          "name": "KeSetEvent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 173,
+          "variable_address": "0x82000950",
+          "thunk_address": null,
+          "name": "KeTimeStampBundle",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 175,
+          "variable_address": "0x82000818",
+          "thunk_address": "0x834DA974",
+          "name": "KeWaitForMultipleObjects",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 176,
+          "variable_address": "0x8200099C",
+          "thunk_address": "0x834DAF04",
+          "name": "KeWaitForSingleObject",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 177,
+          "variable_address": "0x820009B0",
+          "thunk_address": "0x834DAF54",
+          "name": "KfAcquireSpinLock",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 180,
+          "variable_address": "0x820009AC",
+          "thunk_address": "0x834DAF44",
+          "name": "KfReleaseSpinLock",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 186,
+          "variable_address": "0x820008F4",
+          "thunk_address": "0x834DAC94",
+          "name": "MmAllocatePhysicalMemoryEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 189,
+          "variable_address": "0x82000900",
+          "thunk_address": "0x834DACC4",
+          "name": "MmFreePhysicalMemory",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 190,
+          "variable_address": "0x82000800",
+          "thunk_address": "0x834DA914",
+          "name": "MmGetPhysicalAddress",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 194,
+          "variable_address": "0x82000804",
+          "thunk_address": "0x834DA924",
+          "name": "MmMapIoSpace",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 196,
+          "variable_address": "0x820008A4",
+          "thunk_address": "0x834DAB74",
+          "name": "MmQueryAddressProtect",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 197,
+          "variable_address": "0x820008F8",
+          "thunk_address": "0x834DACA4",
+          "name": "MmQueryAllocationSize",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 199,
+          "variable_address": "0x820008FC",
+          "thunk_address": "0x834DACB4",
+          "name": "MmSetAddressProtect",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 204,
+          "variable_address": "0x82000908",
+          "thunk_address": "0x834DACE4",
+          "name": "NtAllocateVirtualMemory",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 205,
+          "variable_address": "0x82000930",
+          "thunk_address": "0x834DAD84",
+          "name": "NtCancelTimer",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 206,
+          "variable_address": "0x8200089C",
+          "thunk_address": "0x834DAB54",
+          "name": "NtClearEvent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 207,
+          "variable_address": "0x820008BC",
+          "thunk_address": "0x834DABC4",
+          "name": "NtClose",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 209,
+          "variable_address": "0x82000894",
+          "thunk_address": "0x834DAB34",
+          "name": "NtCreateEvent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 210,
+          "variable_address": "0x820008E0",
+          "thunk_address": "0x834DAC44",
+          "name": "NtCreateFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 212,
+          "variable_address": "0x82000948",
+          "thunk_address": "0x834DADC4",
+          "name": "NtCreateMutant",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 213,
+          "variable_address": "0x82000888",
+          "thunk_address": "0x834DAB04",
+          "name": "NtCreateSemaphore",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 215,
+          "variable_address": "0x82000938",
+          "thunk_address": "0x834DAD94",
+          "name": "NtCreateTimer",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 217,
+          "variable_address": "0x820008DC",
+          "thunk_address": "0x834DAC34",
+          "name": "NtDeviceIoControlFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 218,
+          "variable_address": "0x82000980",
+          "thunk_address": "0x834DAE94",
+          "name": "NtDuplicateObject",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 219,
+          "variable_address": "0x82000970",
+          "thunk_address": "0x834DAE54",
+          "name": "NtFlushBuffersFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 220,
+          "variable_address": "0x820008F0",
+          "thunk_address": "0x834DAC84",
+          "name": "NtFreeVirtualMemory",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 223,
+          "variable_address": "0x820008CC",
+          "thunk_address": "0x834DAC04",
+          "name": "NtOpenFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 226,
+          "variable_address": "0x82000884",
+          "thunk_address": "0x834DAAF4",
+          "name": "NtPulseEvent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 228,
+          "variable_address": "0x82000974",
+          "thunk_address": "0x834DAE64",
+          "name": "NtQueryDirectoryFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 231,
+          "variable_address": "0x820008EC",
+          "thunk_address": "0x834DAC74",
+          "name": "NtQueryFullAttributesFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 232,
+          "variable_address": "0x820008D0",
+          "thunk_address": "0x834DAC14",
+          "name": "NtQueryInformationFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io_info.cpp"
+        },
+        {
+          "ordinal": 238,
+          "variable_address": "0x820008A8",
+          "thunk_address": "0x834DAB84",
+          "name": "NtQueryVirtualMemory",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_memory.cpp"
+        },
+        {
+          "ordinal": 239,
+          "variable_address": "0x820008C8",
+          "thunk_address": "0x834DABF4",
+          "name": "NtQueryVolumeInformationFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io_info.cpp"
+        },
+        {
+          "ordinal": 240,
+          "variable_address": "0x8200097C",
+          "thunk_address": "0x834DAE84",
+          "name": "NtReadFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 241,
+          "variable_address": "0x82000978",
+          "thunk_address": "0x834DAE74",
+          "name": "NtReadFileScatter",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 242,
+          "variable_address": "0x8200094C",
+          "thunk_address": "0x834DADD4",
+          "name": "NtReleaseMutant",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 243,
+          "variable_address": "0x8200088C",
+          "thunk_address": "0x834DAB14",
+          "name": "NtReleaseSemaphore",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 245,
+          "variable_address": "0x820008A0",
+          "thunk_address": "0x834DAB64",
+          "name": "NtResumeThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 246,
+          "variable_address": "0x82000898",
+          "thunk_address": "0x834DAB44",
+          "name": "NtSetEvent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 247,
+          "variable_address": "0x820008B0",
+          "thunk_address": "0x834DABA4",
+          "name": "NtSetInformationFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io_info.cpp"
+        },
+        {
+          "ordinal": 250,
+          "variable_address": "0x8200092C",
+          "thunk_address": "0x834DAD74",
+          "name": "NtSetTimerEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 252,
+          "variable_address": "0x8200086C",
+          "thunk_address": "0x834DAAB4",
+          "name": "NtSuspendThread",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 253,
+          "variable_address": "0x820008C0",
+          "thunk_address": "0x834DABD4",
+          "name": "NtWaitForSingleObjectEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 254,
+          "variable_address": "0x82000890",
+          "thunk_address": "0x834DAB24",
+          "name": "NtWaitForMultipleObjectsEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 255,
+          "variable_address": "0x820008C4",
+          "thunk_address": "0x834DABE4",
+          "name": "NtWriteFile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 256,
+          "variable_address": "0x820009A8",
+          "thunk_address": "0x834DAF34",
+          "name": "NtWriteFileGather",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 257,
+          "variable_address": "0x82000ACC",
+          "thunk_address": "0x834DB374",
+          "name": "NtYieldExecution",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 259,
+          "variable_address": "0x820009DC",
+          "thunk_address": "0x834DB004",
+          "name": "ObCreateSymbolicLink",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 260,
+          "variable_address": "0x820009E0",
+          "thunk_address": "0x834DB014",
+          "name": "ObDeleteSymbolicLink",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 261,
+          "variable_address": "0x820007E8",
+          "thunk_address": "0x834DA8B4",
+          "name": "ObDereferenceObject",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 265,
+          "variable_address": "0x820009B8",
+          "thunk_address": "0x834DAF74",
+          "name": "ObIsTitleObject",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 271,
+          "variable_address": "0x82000990",
+          "thunk_address": "0x834DAED4",
+          "name": "ObReferenceObject",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 272,
+          "variable_address": "0x82000860",
+          "thunk_address": "0x834DAA94",
+          "name": "ObReferenceObjectByHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_ob.cpp"
+        },
+        {
+          "ordinal": 281,
+          "variable_address": "0x82000848",
+          "thunk_address": "0x834DAA34",
+          "name": "RtlCaptureContext",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 283,
+          "variable_address": "0x8200095C",
+          "thunk_address": "0x834DAE04",
+          "name": "RtlCompareMemoryUlong",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 285,
+          "variable_address": "0x820008B8",
+          "thunk_address": "0x834DABB4",
+          "name": "RtlCompareStringN",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 293,
+          "variable_address": "0x82000AB4",
+          "thunk_address": "0x834DA124",
+          "name": "RtlEnterCriticalSection",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 294,
+          "variable_address": "0x82000954",
+          "thunk_address": "0x834DADE4",
+          "name": "RtlFillMemoryUlong",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 295,
+          "variable_address": "0x82000964",
+          "thunk_address": "0x834DAE24",
+          "name": "RtlFreeAnsiString",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 299,
+          "variable_address": "0x820008D4",
+          "thunk_address": "0x834DAC24",
+          "name": "RtlImageXexHeaderField",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 300,
+          "variable_address": "0x82000880",
+          "thunk_address": "0x834DAAE4",
+          "name": "RtlInitAnsiString",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 301,
+          "variable_address": "0x8200096C",
+          "thunk_address": "0x834DAE44",
+          "name": "RtlInitUnicodeString",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 302,
+          "variable_address": "0x82000AA4",
+          "thunk_address": "0x834DA154",
+          "name": "RtlInitializeCriticalSection",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 303,
+          "variable_address": "0x82000838",
+          "thunk_address": "0x834DA9F4",
+          "name": "RtlInitializeCriticalSectionAndSpinCount",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 304,
+          "variable_address": "0x82000AA8",
+          "thunk_address": "0x834DA144",
+          "name": "RtlLeaveCriticalSection",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 307,
+          "variable_address": "0x82000850",
+          "thunk_address": "0x834DAA54",
+          "name": "RtlMultiByteToUnicodeN",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 309,
+          "variable_address": "0x8200084C",
+          "thunk_address": "0x834DAA44",
+          "name": "RtlNtStatusToDosError",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_error.cpp"
+        },
+        {
+          "ordinal": 310,
+          "variable_address": "0x82000858",
+          "thunk_address": "0x834DAA74",
+          "name": "RtlRaiseException",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_debug.cpp"
+        },
+        {
+          "ordinal": 314,
+          "variable_address": "0x820008E8",
+          "thunk_address": "0x834DAC64",
+          "name": "_snprintf",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_strings.cpp"
+        },
+        {
+          "ordinal": 315,
+          "variable_address": "0x82000A30",
+          "thunk_address": "0x834DB124",
+          "name": "sprintf",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_strings.cpp"
+        },
+        {
+          "ordinal": 319,
+          "variable_address": "0x820008AC",
+          "thunk_address": "0x834DAB94",
+          "name": "RtlTimeFieldsToTime",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 320,
+          "variable_address": "0x82000904",
+          "thunk_address": "0x834DACD4",
+          "name": "RtlTimeToTimeFields",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 321,
+          "variable_address": "0x82000AAC",
+          "thunk_address": "0x834DA134",
+          "name": "RtlTryEnterCriticalSection",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 322,
+          "variable_address": "0x82000968",
+          "thunk_address": "0x834DAE34",
+          "name": "RtlUnicodeStringToAnsiString",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 323,
+          "variable_address": "0x82000854",
+          "thunk_address": "0x834DAA64",
+          "name": "RtlUnicodeToMultiByteN",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 327,
+          "variable_address": "0x82000840",
+          "thunk_address": "0x834DAA14",
+          "name": "RtlUnwind",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 329,
+          "variable_address": "0x820009B4",
+          "thunk_address": "0x834DAF64",
+          "name": "RtlUpcaseUnicodeChar",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 333,
+          "variable_address": "0x82000944",
+          "thunk_address": "0x834DADB4",
+          "name": "_vsnprintf",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_strings.cpp"
+        },
+        {
+          "ordinal": 338,
+          "variable_address": "0x82000AA0",
+          "thunk_address": "0x834DA164",
+          "name": "KeTlsAlloc",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 339,
+          "variable_address": "0x820007DC",
+          "thunk_address": "0x834DA194",
+          "name": "KeTlsFree",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 340,
+          "variable_address": "0x82000A9C",
+          "thunk_address": "0x834DA174",
+          "name": "KeTlsGetValue",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 341,
+          "variable_address": "0x820007E0",
+          "thunk_address": "0x834DA184",
+          "name": "KeTlsSetValue",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 342,
+          "variable_address": "0x820008B4",
+          "thunk_address": null,
+          "name": "XboxHardwareInfo",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 344,
+          "variable_address": "0x82000934",
+          "thunk_address": null,
+          "name": "XboxKrnlVersion",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 402,
+          "variable_address": "0x8200098C",
+          "thunk_address": "0x834DAEC4",
+          "name": "XeCryptSha",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_crypt.cpp"
+        },
+        {
+          "ordinal": 403,
+          "variable_address": "0x820008D8",
+          "thunk_address": null,
+          "name": "XexExecutableModuleHandle",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 404,
+          "variable_address": "0x820007F0",
+          "thunk_address": "0x834DA8D4",
+          "name": "XexCheckExecutablePrivilege",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 405,
+          "variable_address": "0x820007E4",
+          "thunk_address": "0x834DA8A4",
+          "name": "XexGetModuleHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 406,
+          "variable_address": "0x82000924",
+          "thunk_address": "0x834DAD54",
+          "name": "XexGetModuleSection",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 407,
+          "variable_address": "0x82000AB0",
+          "thunk_address": "0x834DA894",
+          "name": "XexGetProcedureAddress",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 409,
+          "variable_address": "0x82000920",
+          "thunk_address": "0x834DAD44",
+          "name": "XexLoadImage",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 411,
+          "variable_address": "0x820008E4",
+          "thunk_address": "0x834DAC54",
+          "name": "XexLoadImageHeaders",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 417,
+          "variable_address": "0x8200091C",
+          "thunk_address": "0x834DAD34",
+          "name": "XexUnloadImage",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_modules.cpp"
+        },
+        {
+          "ordinal": 421,
+          "variable_address": "0x820007F8",
+          "thunk_address": "0x834DA8F4",
+          "name": "__C_specific_handler",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_rtl.cpp"
+        },
+        {
+          "ordinal": 430,
+          "variable_address": "0x8200093C",
+          "thunk_address": null,
+          "name": "ExLoadedCommandLine",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 433,
+          "variable_address": "0x82000A58",
+          "thunk_address": "0x834DB1B4",
+          "name": "VdCallGraphicsNotificationRoutines",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 436,
+          "variable_address": "0x82000A2C",
+          "thunk_address": "0x834DB114",
+          "name": "VdEnableDisableClockGating",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 438,
+          "variable_address": "0x82000A14",
+          "thunk_address": "0x834DB0C4",
+          "name": "VdEnableRingBufferRPtrWriteBack",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 441,
+          "variable_address": "0x82000A34",
+          "thunk_address": "0x834DB134",
+          "name": "VdGetCurrentDisplayGamma",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 442,
+          "variable_address": "0x82000A5C",
+          "thunk_address": "0x834DB1C4",
+          "name": "VdGetCurrentDisplayInformation",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 445,
+          "variable_address": "0x82000A24",
+          "thunk_address": "0x834DB104",
+          "name": "VdGetSystemCommandBuffer",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 446,
+          "variable_address": "0x820009F8",
+          "thunk_address": null,
+          "name": "VdGlobalDevice",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 447,
+          "variable_address": "0x820009FC",
+          "thunk_address": null,
+          "name": "VdGlobalXamDevice",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 448,
+          "variable_address": "0x82000A54",
+          "thunk_address": null,
+          "name": "VdGpuClockInMHz",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 449,
+          "variable_address": "0x82000A80",
+          "thunk_address": null,
+          "name": "VdHSIOCalibrationLock",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 450,
+          "variable_address": "0x82000A6C",
+          "thunk_address": "0x834DB204",
+          "name": "VdInitializeEngines",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 451,
+          "variable_address": "0x82000A18",
+          "thunk_address": "0x834DB0D4",
+          "name": "VdInitializeRingBuffer",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 453,
+          "variable_address": "0x82000A4C",
+          "thunk_address": "0x834DB194",
+          "name": "VdInitializeScalerCommandBuffer",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 454,
+          "variable_address": "0x82000A70",
+          "thunk_address": "0x834DB214",
+          "name": "VdIsHSIOTrainingSucceeded",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 455,
+          "variable_address": "0x82000A00",
+          "thunk_address": "0x834DB074",
+          "name": "VdPersistDisplay",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 457,
+          "variable_address": "0x82000A50",
+          "thunk_address": "0x834DB1A4",
+          "name": "VdQueryVideoFlags",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 458,
+          "variable_address": "0x82000A48",
+          "thunk_address": "0x834DB184",
+          "name": "VdQueryVideoMode",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 467,
+          "variable_address": "0x82000A60",
+          "thunk_address": "0x834DB1D4",
+          "name": "VdSetDisplayMode",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 468,
+          "variable_address": "0x82000A68",
+          "thunk_address": "0x834DB1F4",
+          "name": "VdSetDisplayModeOverride",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 469,
+          "variable_address": "0x82000A64",
+          "thunk_address": "0x834DB1E4",
+          "name": "VdSetGraphicsInterruptCallback",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 473,
+          "variable_address": "0x82000A04",
+          "thunk_address": "0x834DB084",
+          "name": "VdSetSystemCommandBufferGpuIdentifierAddress",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 476,
+          "variable_address": "0x82000A74",
+          "thunk_address": "0x834DB224",
+          "name": "VdShutdownEngines",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 479,
+          "variable_address": "0x82000A08",
+          "thunk_address": "0x834DB094",
+          "name": "KiApcNormalRoutineNop",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_threading.cpp"
+        },
+        {
+          "ordinal": 499,
+          "variable_address": "0x82000830",
+          "thunk_address": "0x834DA9D4",
+          "name": "XAudioRegisterRenderDriverClient",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 500,
+          "variable_address": "0x82000820",
+          "thunk_address": "0x834DA994",
+          "name": "XAudioUnregisterRenderDriverClient",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 501,
+          "variable_address": "0x8200081C",
+          "thunk_address": "0x834DA984",
+          "name": "XAudioSubmitRenderDriverFrame",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 504,
+          "variable_address": "0x820007FC",
+          "thunk_address": "0x834DA904",
+          "name": "XAudioGetVoiceCategoryVolume",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 511,
+          "variable_address": "0x82000834",
+          "thunk_address": "0x834DA9E4",
+          "name": "XAudioGetSpeakerConfig",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 548,
+          "variable_address": "0x82000808",
+          "thunk_address": "0x834DA934",
+          "name": "XMACreateContext",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio_xma.cpp"
+        },
+        {
+          "ordinal": 550,
+          "variable_address": "0x8200080C",
+          "thunk_address": "0x834DA944",
+          "name": "XMAReleaseContext",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio_xma.cpp"
+        },
+        {
+          "ordinal": 598,
+          "variable_address": "0x820009D4",
+          "thunk_address": "0x834DAFE4",
+          "name": "XeKeysConsolePrivateKeySign",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_crypt.cpp"
+        },
+        {
+          "ordinal": 599,
+          "variable_address": "0x820009D0",
+          "thunk_address": "0x834DAFD4",
+          "name": "XeKeysConsoleSignatureVerification",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_crypt.cpp"
+        },
+        {
+          "ordinal": 601,
+          "variable_address": "0x820009CC",
+          "thunk_address": "0x834DAFC4",
+          "name": "StfsCreateDevice",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 602,
+          "variable_address": "0x820009C8",
+          "thunk_address": "0x834DAFB4",
+          "name": "StfsControlDevice",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_io.cpp"
+        },
+        {
+          "ordinal": 603,
+          "variable_address": "0x82000A20",
+          "thunk_address": "0x834DB0F4",
+          "name": "VdSwap",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 614,
+          "variable_address": "0x82000A28",
+          "thunk_address": null,
+          "name": "KeCertMonitorData",
+          "export_type": "kVariable",
+          "sdk_status": "variable (kernel data)",
+          "sdk_source": ""
+        },
+        {
+          "ordinal": 617,
+          "variable_address": "0x82000A78",
+          "thunk_address": "0x834DB234",
+          "name": "VdRetrainEDRAM",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 618,
+          "variable_address": "0x82000A7C",
+          "thunk_address": "0x834DB244",
+          "name": "VdRetrainEDRAMWorker",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_video.cpp"
+        },
+        {
+          "ordinal": 689,
+          "variable_address": "0x82000ABC",
+          "thunk_address": "0x834DB334",
+          "name": "MicDeviceRequest",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_misc.cpp"
+        },
+        {
+          "ordinal": 737,
+          "variable_address": "0x82000AB8",
+          "thunk_address": "0x834DB324",
+          "name": "RmcDeviceRequest",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_misc.cpp"
+        },
+        {
+          "ordinal": 845,
+          "variable_address": "0x82000A88",
+          "thunk_address": "0x834DB264",
+          "name": "XAudioEnableDucker",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 848,
+          "variable_address": "0x82000A84",
+          "thunk_address": "0x834DB254",
+          "name": "XAudioGetDuckerLevel",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 849,
+          "variable_address": "0x82000A98",
+          "thunk_address": "0x834DB2A4",
+          "name": "XAudioGetDuckerThreshold",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 851,
+          "variable_address": "0x82000A90",
+          "thunk_address": "0x834DB284",
+          "name": "XAudioGetDuckerAttackTime",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 853,
+          "variable_address": "0x82000A8C",
+          "thunk_address": "0x834DB274",
+          "name": "XAudioGetDuckerReleaseTime",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        },
+        {
+          "ordinal": 855,
+          "variable_address": "0x82000A94",
+          "thunk_address": "0x834DB294",
+          "name": "XAudioGetDuckerHoldTime",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xboxkrnl/xboxkrnl_audio.cpp"
+        }
+      ]
+    },
+    {
+      "name": "xam.xex",
+      "version": "2.0.21250.0",
+      "min_version": "2.0.16202.0",
+      "imports": [
+        {
+          "ordinal": 1,
+          "variable_address": "0x82000638",
+          "thunk_address": "0x834DA204",
+          "name": "NetDll_WSAStartup",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 2,
+          "variable_address": "0x82000640",
+          "thunk_address": "0x834DA224",
+          "name": "NetDll_WSACleanup",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 3,
+          "variable_address": "0x82000644",
+          "thunk_address": "0x834DA234",
+          "name": "NetDll_socket",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 4,
+          "variable_address": "0x82000648",
+          "thunk_address": "0x834DA244",
+          "name": "NetDll_closesocket",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 5,
+          "variable_address": "0x8200064C",
+          "thunk_address": "0x834DA254",
+          "name": "NetDll_shutdown",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 6,
+          "variable_address": "0x82000650",
+          "thunk_address": "0x834DA264",
+          "name": "NetDll_ioctlsocket",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 7,
+          "variable_address": "0x82000654",
+          "thunk_address": "0x834DA274",
+          "name": "NetDll_setsockopt",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 8,
+          "variable_address": "0x82000658",
+          "thunk_address": "0x834DA284",
+          "name": "NetDll_getsockopt",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 9,
+          "variable_address": "0x8200065C",
+          "thunk_address": "0x834DA294",
+          "name": "NetDll_getsockname",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 11,
+          "variable_address": "0x82000660",
+          "thunk_address": "0x834DA2A4",
+          "name": "NetDll_bind",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 12,
+          "variable_address": "0x82000664",
+          "thunk_address": "0x834DA2B4",
+          "name": "NetDll_connect",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 13,
+          "variable_address": "0x82000668",
+          "thunk_address": "0x834DA2C4",
+          "name": "NetDll_listen",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 14,
+          "variable_address": "0x8200066C",
+          "thunk_address": "0x834DA2D4",
+          "name": "NetDll_accept",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 15,
+          "variable_address": "0x82000670",
+          "thunk_address": "0x834DA2E4",
+          "name": "NetDll_select",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 18,
+          "variable_address": "0x82000674",
+          "thunk_address": "0x834DA2F4",
+          "name": "NetDll_recv",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 20,
+          "variable_address": "0x82000678",
+          "thunk_address": "0x834DA304",
+          "name": "NetDll_recvfrom",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 22,
+          "variable_address": "0x8200067C",
+          "thunk_address": "0x834DA314",
+          "name": "NetDll_send",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 24,
+          "variable_address": "0x82000680",
+          "thunk_address": "0x834DA324",
+          "name": "NetDll_sendto",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 26,
+          "variable_address": "0x82000684",
+          "thunk_address": "0x834DA334",
+          "name": "NetDll_inet_addr",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 27,
+          "variable_address": "0x82000688",
+          "thunk_address": "0x834DA344",
+          "name": "NetDll_WSAGetLastError",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 28,
+          "variable_address": "0x8200068C",
+          "thunk_address": "0x834DA354",
+          "name": "NetDll_WSASetLastError",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 29,
+          "variable_address": "0x82000690",
+          "thunk_address": "0x834DA364",
+          "name": "NetDll_WSACreateEvent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 34,
+          "variable_address": "0x82000694",
+          "thunk_address": "0x834DA374",
+          "name": "NetDll___WSAFDIsSet",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 51,
+          "variable_address": "0x82000698",
+          "thunk_address": "0x834DA384",
+          "name": "NetDll_XNetStartup",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 52,
+          "variable_address": "0x8200069C",
+          "thunk_address": "0x834DA394",
+          "name": "NetDll_XNetCleanup",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 53,
+          "variable_address": "0x820006A0",
+          "thunk_address": "0x834DA3A4",
+          "name": "NetDll_XNetRandom",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 55,
+          "variable_address": "0x820006A4",
+          "thunk_address": "0x834DA3B4",
+          "name": "NetDll_XNetRegisterKey",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 56,
+          "variable_address": "0x820006A8",
+          "thunk_address": "0x834DA3C4",
+          "name": "NetDll_XNetUnregisterKey",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 57,
+          "variable_address": "0x820006AC",
+          "thunk_address": "0x834DA3D4",
+          "name": "NetDll_XNetXnAddrToInAddr",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 58,
+          "variable_address": "0x820006B0",
+          "thunk_address": "0x834DA3E4",
+          "name": "NetDll_XNetServerToInAddr",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 60,
+          "variable_address": "0x820006B4",
+          "thunk_address": "0x834DA3F4",
+          "name": "NetDll_XNetInAddrToXnAddr",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 63,
+          "variable_address": "0x820006B8",
+          "thunk_address": "0x834DA404",
+          "name": "NetDll_XNetUnregisterInAddr",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 65,
+          "variable_address": "0x820006BC",
+          "thunk_address": "0x834DA414",
+          "name": "NetDll_XNetConnect",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 67,
+          "variable_address": "0x820006C0",
+          "thunk_address": "0x834DA424",
+          "name": "NetDll_XNetDnsLookup",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 68,
+          "variable_address": "0x820006C4",
+          "thunk_address": "0x834DA434",
+          "name": "NetDll_XNetDnsRelease",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 69,
+          "variable_address": "0x820006C8",
+          "thunk_address": "0x834DA444",
+          "name": "NetDll_XNetQosListen",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 70,
+          "variable_address": "0x820006CC",
+          "thunk_address": "0x834DA454",
+          "name": "NetDll_XNetQosLookup",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 72,
+          "variable_address": "0x820006D0",
+          "thunk_address": "0x834DA464",
+          "name": "NetDll_XNetQosRelease",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 73,
+          "variable_address": "0x820006D4",
+          "thunk_address": "0x834DA474",
+          "name": "NetDll_XNetGetTitleXnAddr",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 75,
+          "variable_address": "0x820006D8",
+          "thunk_address": "0x834DA484",
+          "name": "NetDll_XNetGetEthernetLinkStatus",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 77,
+          "variable_address": "0x820006DC",
+          "thunk_address": "0x834DA494",
+          "name": "NetDll_XNetQosGetListenStats",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 84,
+          "variable_address": "0x820006E0",
+          "thunk_address": "0x834DA4A4",
+          "name": "NetDll_XNetSetSystemLinkPort",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_net.cpp"
+        },
+        {
+          "ordinal": 310,
+          "variable_address": "0x820006F8",
+          "thunk_address": "0x834DA504",
+          "name": "XNetLogonGetTitleID",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_misc.cpp"
+        },
+        {
+          "ordinal": 400,
+          "variable_address": "0x8200077C",
+          "thunk_address": "0x834DA714",
+          "name": "XamInputGetCapabilities",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_input.cpp"
+        },
+        {
+          "ordinal": 401,
+          "variable_address": "0x82000780",
+          "thunk_address": "0x834DA724",
+          "name": "XamInputGetState",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_input.cpp"
+        },
+        {
+          "ordinal": 402,
+          "variable_address": "0x82000784",
+          "thunk_address": "0x834DA734",
+          "name": "XamInputSetState",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_input.cpp"
+        },
+        {
+          "ordinal": 420,
+          "variable_address": "0x820007C4",
+          "thunk_address": "0x834DA834",
+          "name": "XamLoaderLaunchTitle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 423,
+          "variable_address": "0x82000624",
+          "thunk_address": "0x834DA1B4",
+          "name": "XamLoaderGetLaunchDataSize",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 424,
+          "variable_address": "0x82000628",
+          "thunk_address": "0x834DA1C4",
+          "name": "XamLoaderGetLaunchData",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 425,
+          "variable_address": "0x820007D0",
+          "thunk_address": "0x834DA864",
+          "name": "XamLoaderTerminateTitle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 431,
+          "variable_address": "0x82000790",
+          "thunk_address": "0x834DA764",
+          "name": "XamTaskSchedule",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_task.cpp"
+        },
+        {
+          "ordinal": 433,
+          "variable_address": "0x8200061C",
+          "thunk_address": "0x834DA884",
+          "name": "XamTaskCloseHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_task.cpp"
+        },
+        {
+          "ordinal": 435,
+          "variable_address": "0x820007D4",
+          "thunk_address": "0x834DA874",
+          "name": "XamTaskShouldExit",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_task.cpp"
+        },
+        {
+          "ordinal": 490,
+          "variable_address": "0x820006EC",
+          "thunk_address": "0x834DA4D4",
+          "name": "XamAlloc",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 492,
+          "variable_address": "0x820006E4",
+          "thunk_address": "0x834DA4B4",
+          "name": "XamFree",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 500,
+          "variable_address": "0x820006E8",
+          "thunk_address": "0x834DA4C4",
+          "name": "XMsgInProcessCall",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_msg.cpp"
+        },
+        {
+          "ordinal": 501,
+          "variable_address": "0x82000794",
+          "thunk_address": "0x834DA774",
+          "name": "XMsgCompleteIORequest",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_msg.cpp"
+        },
+        {
+          "ordinal": 503,
+          "variable_address": "0x820006F0",
+          "thunk_address": "0x834DA4E4",
+          "name": "XMsgStartIORequest",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_msg.cpp"
+        },
+        {
+          "ordinal": 504,
+          "variable_address": "0x82000604",
+          "thunk_address": "0x834DB2F4",
+          "name": "XMsgCancelIORequest",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_msg.cpp"
+        },
+        {
+          "ordinal": 507,
+          "variable_address": "0x8200078C",
+          "thunk_address": "0x834DA754",
+          "name": "XamGetOverlappedResult",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_msg.cpp"
+        },
+        {
+          "ordinal": 508,
+          "variable_address": "0x8200071C",
+          "thunk_address": "0x834DA594",
+          "name": "XMsgStartIORequestEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_msg.cpp"
+        },
+        {
+          "ordinal": 520,
+          "variable_address": "0x82000610",
+          "thunk_address": "0x834DB2C4",
+          "name": "XamUserGetDeviceContext",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_input.cpp"
+        },
+        {
+          "ordinal": 522,
+          "variable_address": "0x820006F4",
+          "thunk_address": "0x834DA4F4",
+          "name": "XamUserGetXUID",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 526,
+          "variable_address": "0x82000798",
+          "thunk_address": "0x834DA784",
+          "name": "XamUserGetName",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 528,
+          "variable_address": "0x82000714",
+          "thunk_address": "0x834DA574",
+          "name": "XamUserGetSigninState",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 530,
+          "variable_address": "0x82000718",
+          "thunk_address": "0x834DA584",
+          "name": "XamUserCheckPrivilege",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 531,
+          "variable_address": "0x8200079C",
+          "thunk_address": "0x834DA794",
+          "name": "XamUserAreUsersFriends",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 537,
+          "variable_address": "0x82000704",
+          "thunk_address": "0x834DA534",
+          "name": "XamUserReadProfileSettings",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 538,
+          "variable_address": "0x82000708",
+          "thunk_address": "0x834DA544",
+          "name": "XamUserWriteProfileSettings",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 551,
+          "variable_address": "0x820007C0",
+          "thunk_address": "0x834DA824",
+          "name": "XamUserGetSigninInfo",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 590,
+          "variable_address": "0x82000710",
+          "thunk_address": "0x834DA564",
+          "name": "XamCreateEnumeratorHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_enum.cpp"
+        },
+        {
+          "ordinal": 591,
+          "variable_address": "0x8200070C",
+          "thunk_address": "0x834DA554",
+          "name": "XamGetPrivateEnumStructureFromHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_enum.cpp"
+        },
+        {
+          "ordinal": 592,
+          "variable_address": "0x820007B8",
+          "thunk_address": "0x834DA804",
+          "name": "XamEnumerate",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_enum.cpp"
+        },
+        {
+          "ordinal": 601,
+          "variable_address": "0x82000720",
+          "thunk_address": "0x834DA5A4",
+          "name": "XamContentCreateEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content.cpp"
+        },
+        {
+          "ordinal": 602,
+          "variable_address": "0x82000728",
+          "thunk_address": "0x834DA5C4",
+          "name": "XamContentClose",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content.cpp"
+        },
+        {
+          "ordinal": 603,
+          "variable_address": "0x82000724",
+          "thunk_address": "0x834DA5B4",
+          "name": "XamContentDelete",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content.cpp"
+        },
+        {
+          "ordinal": 604,
+          "variable_address": "0x82000734",
+          "thunk_address": "0x834DA5F4",
+          "name": "XamContentCreateEnumerator",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content.cpp"
+        },
+        {
+          "ordinal": 606,
+          "variable_address": "0x8200073C",
+          "thunk_address": "0x834DA614",
+          "name": "XamContentGetDeviceData",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content_device.cpp"
+        },
+        {
+          "ordinal": 610,
+          "variable_address": "0x8200072C",
+          "thunk_address": "0x834DA5D4",
+          "name": "XamContentGetCreator",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content.cpp"
+        },
+        {
+          "ordinal": 613,
+          "variable_address": "0x82000738",
+          "thunk_address": "0x834DA604",
+          "name": "XamContentGetDeviceState",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content_device.cpp"
+        },
+        {
+          "ordinal": 614,
+          "variable_address": "0x82000730",
+          "thunk_address": "0x834DA5E4",
+          "name": "XamContentGetLicenseMask",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_content.cpp"
+        },
+        {
+          "ordinal": 640,
+          "variable_address": "0x82000788",
+          "thunk_address": "0x834DA744",
+          "name": "XamGetExecutionId",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 642,
+          "variable_address": "0x8200063C",
+          "thunk_address": "0x834DA214",
+          "name": "XamGetSystemVersion",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 650,
+          "variable_address": "0x820007BC",
+          "thunk_address": "0x834DA814",
+          "name": "XamNotifyCreateListener",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_notify.cpp"
+        },
+        {
+          "ordinal": 651,
+          "variable_address": "0x82000630",
+          "thunk_address": "0x834DA1E4",
+          "name": "XNotifyGetNext",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_notify.cpp"
+        },
+        {
+          "ordinal": 652,
+          "variable_address": "0x8200062C",
+          "thunk_address": "0x834DA1D4",
+          "name": "XNotifyPositionUI",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_notify.cpp"
+        },
+        {
+          "ordinal": 700,
+          "variable_address": "0x82000740",
+          "thunk_address": "0x834DA624",
+          "name": "XamShowSigninUI",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 703,
+          "variable_address": "0x82000744",
+          "thunk_address": "0x834DA634",
+          "name": "XamShowFriendsUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 704,
+          "variable_address": "0x8200074C",
+          "thunk_address": "0x834DA654",
+          "name": "XamShowMessagesUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 705,
+          "variable_address": "0x82000750",
+          "thunk_address": "0x834DA664",
+          "name": "XamShowKeyboardUI",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 706,
+          "variable_address": "0x82000754",
+          "thunk_address": "0x834DA674",
+          "name": "XamShowQuickChatUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 709,
+          "variable_address": "0x8200075C",
+          "thunk_address": "0x834DA694",
+          "name": "XamShowAchievementsUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 710,
+          "variable_address": "0x82000760",
+          "thunk_address": "0x834DA6A4",
+          "name": "XamShowPlayerReviewUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 711,
+          "variable_address": "0x82000764",
+          "thunk_address": "0x834DA6B4",
+          "name": "XamShowMarketplaceUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 712,
+          "variable_address": "0x82000748",
+          "thunk_address": "0x834DA644",
+          "name": "XamShowPlayersUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 715,
+          "variable_address": "0x82000768",
+          "thunk_address": "0x834DA6C4",
+          "name": "XamShowDeviceSelectorUI",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 716,
+          "variable_address": "0x8200076C",
+          "thunk_address": "0x834DA6D4",
+          "name": "XamShowMessageComposeUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 717,
+          "variable_address": "0x82000770",
+          "thunk_address": "0x834DA6E4",
+          "name": "XamShowGameInviteUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 718,
+          "variable_address": "0x82000774",
+          "thunk_address": "0x834DA6F4",
+          "name": "XamShowFriendRequestUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 725,
+          "variable_address": "0x82000758",
+          "thunk_address": "0x834DA684",
+          "name": "XamShowGamerCardUIForXUID",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 729,
+          "variable_address": "0x82000778",
+          "thunk_address": "0x834DA704",
+          "name": "XamShowDirtyDiscErrorUI",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 732,
+          "variable_address": "0x820007C8",
+          "thunk_address": "0x834DA844",
+          "name": "XamShowMessageBoxUIEx",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 741,
+          "variable_address": "0x820007B0",
+          "thunk_address": "0x834DA7E4",
+          "name": "XamShowCustomMessageComposeUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 742,
+          "variable_address": "0x820007B4",
+          "thunk_address": "0x834DA7F4",
+          "name": "XamShowCustomPlayerListUI",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_ui.cpp"
+        },
+        {
+          "ordinal": 750,
+          "variable_address": "0x820007AC",
+          "thunk_address": "0x834DA7D4",
+          "name": "XamUserCreateAchievementEnumerator",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 752,
+          "variable_address": "0x820007A8",
+          "thunk_address": "0x834DA7C4",
+          "name": "XamWriteGamerTile",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 757,
+          "variable_address": "0x820007A4",
+          "thunk_address": "0x834DA7B4",
+          "name": "XamReadTileToTexture",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 759,
+          "variable_address": "0x820007A0",
+          "thunk_address": "0x834DA7A4",
+          "name": "XamUserCreateStatsEnumerator",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 780,
+          "variable_address": "0x82000600",
+          "thunk_address": "0x834DB314",
+          "name": "XamVoiceCreate",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_voice.cpp"
+        },
+        {
+          "ordinal": 781,
+          "variable_address": "0x8200060C",
+          "thunk_address": "0x834DB2D4",
+          "name": "XamVoiceHeadsetPresent",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_voice.cpp"
+        },
+        {
+          "ordinal": 782,
+          "variable_address": "0x82000618",
+          "thunk_address": "0x834DB304",
+          "name": "XamVoiceSubmitPacket",
+          "export_type": "kFunction",
+          "sdk_status": "stub",
+          "sdk_source": "src/kernel/xam/xam_voice.cpp"
+        },
+        {
+          "ordinal": 783,
+          "variable_address": "0x82000608",
+          "thunk_address": "0x834DB2E4",
+          "name": "XamVoiceClose",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_voice.cpp"
+        },
+        {
+          "ordinal": 790,
+          "variable_address": "0x82000700",
+          "thunk_address": "0x834DA524",
+          "name": "XamSessionCreateHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 791,
+          "variable_address": "0x820006FC",
+          "thunk_address": "0x834DA514",
+          "name": "XamSessionRefObjByHandle",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_user.cpp"
+        },
+        {
+          "ordinal": 971,
+          "variable_address": "0x820007CC",
+          "thunk_address": "0x834DA854",
+          "name": "XGetAVPack",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 972,
+          "variable_address": "0x82000634",
+          "thunk_address": "0x834DA1F4",
+          "name": "XGetGameRegion",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_info.cpp"
+        },
+        {
+          "ordinal": 977,
+          "variable_address": "0x82000620",
+          "thunk_address": "0x834DA1A4",
+          "name": "XGetVideoMode",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_video.cpp"
+        },
+        {
+          "ordinal": 1175,
+          "variable_address": "0x82000614",
+          "thunk_address": "0x834DB2B4",
+          "name": "XamVoiceIsActiveProcess",
+          "export_type": "kFunction",
+          "sdk_status": "implemented",
+          "sdk_source": "src/kernel/xam/xam_voice.cpp"
+        }
+      ]
+    }
+  ],
+  "middleware_string_evidence": [
+    {
+      "component": "Unreal Engine 3",
+      "matches": 260
+    },
+    {
+      "component": "FMOD",
+      "matches": 381
+    },
+    {
+      "component": "Bink video",
+      "matches": 29
+    },
+    {
+      "component": "Scaleform GFx",
+      "matches": 194
+    },
+    {
+      "component": "PhysX / NovodeX",
+      "matches": 35
+    },
+    {
+      "component": "XAudio / XACT",
+      "matches": 6
+    },
+    {
+      "component": "SpeedTree",
+      "matches": 3
+    },
+    {
+      "component": "Xbox Live / XUI",
+      "matches": 39
+    }
+  ],
+  "ue3_engine_version_symbol_present": true
+}

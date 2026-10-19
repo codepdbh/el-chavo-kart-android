@@ -1,0 +1,5 @@
+# REX_FATAL placeholders that are known to be unreachable. Format: <source> <target>  # evidence
+# sub_82925E90 is not code: it is the 50-entry jump table of the switch in sub_82925E40 (cmplwi cr6,r11,0x31 at
+# 0x82925E70; lis/addi 0x82925E90; lwzx; bctr at 0x82925E8C). Gap-fill decoded the table words as instructions.
+# No branch, call or data word in the image references 0x82925E90 (tools/function_report.py, codegen pass 2).
+0x82925FB8 0x82925E6C

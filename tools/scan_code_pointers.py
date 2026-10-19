@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+"""Finds function entries reachable only through data (vtables, callback tables) that codegen did not register.
+
+A candidate must satisfy all of:
+  * a 4-byte aligned word in a non-executable section (.rdata/.data/...; .pdata and .reloc excluded) whose value
+    is a 4-byte aligned address inside an executable section;
+  * not already a registered function start (analysis/functions/function_map.json);
+  * not an internal block label (`loc_XXXXXXXX:`) in the generated code: those are jump-table cases or branch
+    targets of an existing function and must not be split off;
+  * the previous instruction ends control flow (blr, bctr, unconditional b, or zero padding), so the address is
+    the start of a separate routine;
+  * the first instruction decodes as valid PowerPC.
+
+Usage: python tools/scan_code_pointers.py --image out/analysis/chavokart-82000000.bin
+         --xex-report analysis/xex/xex_report.json --functions analysis/functions/function_map.json
+         --generated generated/default --out analysis/functions/data_referenced_entries.json [--toml-snippet FILE]
+"""
+import argparse
+import collections
+import glob
+import json
+import os
+import re
+import struct
+
+from capstone import CS_ARCH_PPC, CS_MODE_32, CS_MODE_BIG_ENDIAN, Cs
+
+ENDS_FLOW = {0x4E800020, 0x4E800420, 0x00000000}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--image', required=True)
+    ap.add_argument('--xex-report', required=True)
+    ap.add_argument('--functions', required=True)
+    ap.add_argument('--generated', required=True)
+    ap.add_argument('--out', required=True)
+    ap.add_argument('--toml-snippet')
+    a = ap.parse_args()
+    report = json.load(open(a.xex_report, encoding='utf-8'))
+    base = int(report['image_base'], 16)
+    image = open(a.image, 'rb').read()
+    code = [(int(s['address'], 16), int(s['address'], 16) + s['virtual_size'])
+            for s in report['pe']['sections'] if s['executable']]
+    data = [(s['name'], int(s['address'], 16), int(s['address'], 16) + s['virtual_size'])
+            for s in report['pe']['sections'] if not s['executable'] and s['name'] not in ('.pdata', '.reloc')]
+    starts = {int(f['address'], 16) for f in json.load(open(a.functions, encoding='utf-8'))['functions']}
+    labels = set()
+    for path in glob.glob(os.path.join(a.generated, '*_recomp.*.cpp')):
+        labels.update(int(x, 16) for x in re.findall(r'(?m)^loc_([0-9A-F]{8}):', open(path, encoding='utf-8').read()))
+    md = Cs(CS_ARCH_PPC, CS_MODE_32 | CS_MODE_BIG_ENDIAN)
+
+    def in_code(v):
+        return any(lo <= v < hi for lo, hi in code)
+
+    def word(addr):
+        return struct.unpack_from('>I', image, addr - base)[0]
+
+    # MSVC SEH scope tables: <count N (1..32)> then N records {begin, end, filter, target}, all code addresses.
+    # Their targets are continuation blocks inside a function (ReXGlue handles SEH scopes itself): never entries.
+    scope_words = set()
+    for name, lo, hi in data:
+        for addr in range(lo & ~3, hi - 3, 4):
+            n = word(addr)
+            if not 1 <= n <= 32 or addr + 4 + 16 * n > hi:
+                continue
+            fields = [word(addr + 4 + 4 * i) for i in range(4 * n)]
+            if all(in_code(f) and not f & 3 for f in fields) and all(
+                    fields[4 * i] < fields[4 * i + 1] for i in range(n)):
+                scope_words.update(addr + 4 + 4 * i for i in range(4 * n))
+
+    refs = collections.defaultdict(list)
+    rejected = collections.Counter()
+    for name, lo, hi in data:
+        for addr in range(lo & ~3, hi - 3, 4):
+            v = word(addr)
+            if v & 3 or not in_code(v) or v in starts:
+                continue
+            if addr in scope_words:
+                rejected['SEH scope table'] += 1
+                continue
+            refs[v].append((name, addr))
+    candidates = []
+    for v, where in sorted(refs.items()):
+        if v in labels:
+            rejected['internal label'] += 1
+            continue
+        prev = struct.unpack_from('>I', image, v - 4 - base)[0]
+        if not (prev in ENDS_FLOW or (prev & 0xFC000003) == 0x48000000):
+            rejected['previous instruction falls through'] += 1
+            continue
+        ins = next(md.disasm(image[v - base:v - base + 4], v), None)
+        if ins is None or struct.unpack_from('>I', image, v - base)[0] == 0:
+            rejected['not valid code'] += 1
+            continue
+        candidates.append({'address': '0x%08X' % v, 'first_instruction': '%s %s' % (ins.mnemonic, ins.op_str),
+                           'references': len(where), 'sections': sorted({w[0] for w in where}),
+                           'first_reference': '0x%08X' % where[0][1]})
+    json.dump({'candidates': candidates, 'rejected': rejected}, open(a.out, 'w', encoding='utf-8'), indent=1)
+    if a.toml_snippet:
+        with open(a.toml_snippet, 'w', encoding='utf-8') as f:
+            f.write('# Generated by tools/scan_code_pointers.py: data-referenced entries (see %s).\n'
+                    % os.path.basename(a.out))
+            for c in candidates:
+                f.write('"%s" = { }  # %s; %d data ref(s), first at %s\n' % (
+                    c['address'], c['first_instruction'], c['references'], c['first_reference']))
+    print('[RECOMP] %d data-referenced entries to register; rejected: %s' % (len(candidates), dict(rejected)))
+
+
+if __name__ == '__main__':
+    main()

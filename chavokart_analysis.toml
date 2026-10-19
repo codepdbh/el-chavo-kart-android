@@ -1,0 +1,36 @@
+# El Chavo Kart specific codegen configuration.
+# Every address added here must come from evidence in the real executable (analysis/functions/*) and carry
+# a comment saying how it was found. Do not copy addresses from NFS or The Simpsons Game.
+#
+# Initial bring-up keeps the PPC registers in the shared context (same choice as the NFS Carbon port) so a
+# missed function boundary cannot silently lose register state between split functions.
+cr_as_local = false
+xer_as_local = false
+ctr_as_local = false
+non_volatile_as_local = false
+
+[functions]
+# Codegen pass 1 (out/logs/codegen-1.stdout) reported 17 "UnresolvedCall" errors. Each branch was verified in the
+# rebuilt image with tools/inspect_branches.py (analysis/functions/unresolved_branches_pass1.json).
+#
+# Leaf routines without prologue, preceded by an unconditional `b` that ends the previous routine and reached
+# only through vtables. Gap-fill had registered just their out-of-line tail block (after `blr`).
+# 0x82FB2700 owns the `b 0x82FB2774` at 0x82FB2784.
+"0x82FB2700" = { }
+# 0x82FD0910 owns the `b 0x82FD097C` at 0x82FD098C.
+"0x82FD0910" = { }
+# 0x82FD0A28 owns the `b 0x82FD0A94` at 0x82FD0AA4.
+"0x82FD0A28" = { }
+# Single-instruction tail thunks (`b`) placed after another thunk's `b`, targeted by adjustor thunks
+# (`addi r3,r3,-N ; b`).  b 0x82E4D8D8 at 0x82E37A9C and 0x82E37AC4.
+"0x82E4D8D8" = { }
+# b 0x82B90068 at 0x82B9012C and 0x82B8CA24.
+"0x82B90068" = { }
+# b 0x82E514C8 at 0x82E514D4.
+"0x82E514C8" = { }
+# Leaf routines after an unconditional `b`: b 0x832C3910 at 0x832C3A7C; b 0x82FCB148 at 0x82FCCC14.
+"0x832C3910" = { }
+"0x82FCB148" = { }
+# The remaining 7 targets (0x82FBFD18, 0x82FBFD08, 0x82FBFCF8, 0x82FBFCE8, 0x82FBFC38, 0x82FBFBC0, 0x832D9690) follow
+# a `bctr` and are virtual-call thunks (lwz r11,0(r3); lwz r11,N(r11); mtctr r11; bctr) laid out
+# back to back; they are split by src/codegen/phase_gapfill.cpp instead of being listed one by one.
