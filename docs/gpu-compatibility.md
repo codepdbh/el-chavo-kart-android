@@ -11,6 +11,7 @@ Requisitos del renderer del juego: **sin determinar** hasta que el backend Xenos
 | Plataforma / GPU | Dispositivo | Arranque | Driver | Sonda | Shaders | Menú | Carrera | Audio | Guardado | FPS |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Snapdragon 665 / Adreno 610 | Redmi Note 8 (Android 17) | APK diagnóstico instalado; launcher iniciado (log) | SIN VERIFICAR | SIN VERIFICAR (pantalla bloqueada) | — | — | — | — | — | — |
+| Snapdragon 8 Elite / Adreno 830 | Galaxy S25 Ultra SM-S938B (Android 17) | ✅ | Sistema (Qualcomm 0x80320040) | — | ✅ compilan | — | ✅ carrera demo renderizada | SIN VERIFICAR | — | SIN MEDIR |
 | Exynos / Xclipse | — | SIN VERIFICAR | | | | | | | | |
 | Exynos / Mali | — | SIN VERIFICAR | | | | | | | | |
 | Dimensity / Mali | — | SIN VERIFICAR | | | | | | | | |

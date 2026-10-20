@@ -142,6 +142,15 @@ final class GpuDrivers {
         else if (!file.setReadOnly()) throw new UserError(R.string.error_create_folder);
     }
 
+    /** Runtime options of the SDK's Android driver loader (rex_android_gpu_driver); empty name = system driver. */
+    static void arguments(Context context, List<String> args) {
+        Driver driver = selected(context);
+        args.add("--android_native_lib_dir=" + context.getApplicationInfo().nativeLibraryDir);
+        args.add("--android_tmp_dir=" + context.getCacheDir().getAbsolutePath());
+        args.add("--android_gpu_driver_dir=" + (driver == null ? "" : driver.directory.getAbsolutePath() + "/"));
+        args.add("--android_gpu_driver_name=" + (driver == null ? "" : driver.library));
+    }
+
     static void remove(Context context, Driver driver) throws IOException {
         File target = new File(root(context), driver.id);
         if (!target.getCanonicalFile().getParentFile().equals(root(context).getCanonicalFile()))

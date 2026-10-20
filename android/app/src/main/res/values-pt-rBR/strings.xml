@@ -110,4 +110,15 @@
     <string name="driver_error_turnip_family">Turnip só é compatível com GPUs Adreno. Sua GPU: %1$s.</string>
     <string name="driver_error_panvk_family">PanVK é somente para GPUs Mali. Sua GPU: %1$s.</string>
     <string name="driver_error_xclipse">GPUs Xclipse usam o driver do sistema; não há drivers externos verificados.</string>
+
+    <string name="touch_description">Controle virtual de Xbox 360</string>
+    <string name="touch_left_stick">ANALÓG. ESQ.</string>
+    <string name="touch_right_stick">ANALÓG. DIR.</string>
+    <string name="touch_edit">EDITAR</string>
+    <string name="touch_done">PRONTO</string>
+    <string name="touch_select">Selecione um botão ou analógico</string>
+    <string name="touch_opacity">Opacidade</string>
+    <string name="touch_reset">Restaurar</string>
+    <string name="touch_save">Salvar</string>
+    <string name="touch_editor_help">Arraste para mover. Tamanho: %1$s</string>
 </resources>

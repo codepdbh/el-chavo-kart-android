@@ -21,6 +21,13 @@ class ChavokartApp : public rex::ReXApp {
 
   void OnPreSetup(rex::RuntimeConfig& config) override { config.gpu_plugin = "xenos"; }
 
+#if REX_PLATFORM_ANDROID
+  // Paths come from GameActivity arguments; keep the runtime settings file in the private user folder.
+  void OnConfigurePaths(rex::PathConfig& paths) override {
+    paths.config_path = paths.user_data_root / "chavokart.toml";
+  }
+#endif
+
   void OnPreLaunchModule() override {
     if (!REXCVAR_GET(chavokart_dump_image)) return;
     // Diagnostic copy of the loaded image (relocated, imports bound) for address analysis.

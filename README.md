@@ -13,8 +13,8 @@ Port nativo experimental de **El Chavo Kart (Xbox 360, Unreal Engine 3)** a Andr
 | Inicio del motor UE3 (PC) | ✅ Vídeos Bink, audio XMA y pantalla de título "Press START" renderizados |
 | APK de diagnóstico | ✅ Compila e instala (launcher es/en/pt-BR, sonda GPU aislada, prueba Vulkan, drivers ZIP, informe local) |
 | Menú real (PC) | ⏳ Pendiente de enviar entrada |
-| Juego en Android ARM64 | ❌ Aún no compilado para ARM64 |
-| Gameplay / idiomas del juego / FPS | ❌ No iniciado |
+| Juego en Android ARM64 | ✅ S25 Ultra (Adreno 830): arranca, Vulkan, título y carrera 3D renderizada (demo automática) |
+| Control del jugador / menú / idiomas del juego / FPS | ⏳ Sin verificar |
 
 Ver `docs/progress.md` para el detalle y `docs/known-issues.md` para los problemas abiertos.
 

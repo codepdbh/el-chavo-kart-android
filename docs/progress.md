@@ -35,3 +35,12 @@
 2. Localizar en ejecución cómo el motor elige idioma (`--user_language`/locale → INT/ESN/ESM/PTB).
 3. Compilar el objetivo del juego para Android ARM64 (vigilar el espacio en disco: ~12 GB libres).
 4. Probar en el teléfono desbloqueado: UI del launcher, sonda GPU y prueba Vulkan.
+
+## 2026-10-20 — Primer arranque en Android
+
+- Build `-WithGame` (CMake Release, NDK 28.2): APK 39,7 MB, `libmain.so` 82 MB, todas las bibliotecas con LOAD 0x4000.
+- Corrección de nombres: AGP compilaba RelWithDebInfo y el SDK añadía el sufijo `rd`, que rompe la carga de hooks de libadrenotools → `CMAKE_BUILD_TYPE=Release`.
+- Punto de entrada Android propio (`src/platform/android_entry.cpp`): el SDK compartido crea la app `nfsmw`.
+- **Fallo 1 en S25** (SM-S938B, Adreno 830, driver Qualcomm 0x80320040): `invalid pthread_t passed to pthread_join` desde `NtWaitForSingleObjectEx` (sub_830DFB80). El runtime POSIX hacía `pthread_join` tras cada espera satisfecha sobre un hilo; Xbox permite esperar varias veces sobre un hilo acabado. Corregido con una copia parcheada de `threading_posix.cpp` (unión única) generada desde CMake.
+- **Resultado:** a los 60 s, sin crash, el juego renderiza una carrera 3D en la pista Ciudad (HUD, vuelta 1/2, cuenta atrás) con el mando táctil superpuesto. Probablemente es la demo de atracción.
+- Pendiente: entrada del jugador (START), menú, personaje del kart oscuro (posible defecto de iluminación), audio en el teléfono, rendimiento/FPS.
