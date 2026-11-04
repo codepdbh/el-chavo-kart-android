@@ -192,9 +192,41 @@ public class LauncherActivity extends LocalizedActivity {
                             recreate();
                         }).setNegativeButton(R.string.dialog_cancel, null).show());
         List<String> langs = GameFiles.installed(this) ? GameFiles.languages(GameFiles.gameDir(this)) : new ArrayList<>();
-        options.addView(label(getString(R.string.game_text_language) + ": " + (langs.isEmpty() ?
-                getString(R.string.game_text_unknown) : getString(R.string.game_text_pending, languageNames(langs))), 12, MUTED));
-        options.addView(label(getString(R.string.voice_language) + ": " + getString(R.string.voice_pending), 12, MUTED));
+        options.addView(heading(R.string.section_game));
+        if (langs.isEmpty()) {
+            options.addView(label(getString(R.string.game_text_language) + ": " + getString(R.string.game_text_unknown), 12, MUTED));
+        } else {
+            String effective = GameOptions.effectiveLanguage(this, langs);
+            String chosen = GameOptions.get(this, GameOptions.LANGUAGE);
+            List<String> codes = new ArrayList<>();
+            List<String> names = new ArrayList<>();
+            codes.add("auto");
+            names.add(getString(R.string.opt_language_auto_detail, languageNames(java.util.Collections.singletonList(effective))));
+            for (String code : langs) { codes.add(code); names.add(languageNames(java.util.Collections.singletonList(code))); }
+            int selected = Math.max(0, codes.indexOf(chosen));
+            button(options, getString(R.string.opt_game_language) + "\n" + names.get(selected), () ->
+                    new AlertDialog.Builder(this).setTitle(R.string.opt_game_language)
+                            .setSingleChoiceItems(names.toArray(new String[0]), selected, (d, which) -> {
+                                GameOptions.set(this, GameOptions.LANGUAGE, codes.get(which));
+                                Log.i("LANGUAGE", "Game language " + codes.get(which));
+                                d.dismiss();
+                                refreshOptions();
+                            }).setNegativeButton(R.string.dialog_cancel, null).show());
+            options.addView(label(getString(R.string.voice_language) + ": " + getString(R.string.voice_follows_text), 12, MUTED));
+        }
+        for (GameOptions.Option option : new GameOptions.Option[]{GameOptions.ASYNC, GameOptions.CPU, GameOptions.VSYNC, GameOptions.LOGS, GameOptions.FPS_OVERLAY}) {
+            String value = GameOptions.get(this, option);
+            String[] optionLabels = new String[option.values.length];
+            for (int i = 0; i < optionLabels.length; i++) optionLabels[i] = getString(option.labels[i]);
+            int optionIndex = java.util.Arrays.asList(option.values).indexOf(value);
+            button(options, getString(option.title) + "\n" + getString(option.label(value)), () ->
+                    new AlertDialog.Builder(this).setTitle(option.title)
+                            .setSingleChoiceItems(optionLabels, optionIndex, (d, which) -> {
+                                GameOptions.set(this, option, option.values[which]);
+                                d.dismiss();
+                                refreshOptions();
+                            }).setNegativeButton(R.string.dialog_cancel, null).show());
+        }
 
         options.addView(heading(R.string.section_driver));
         GpuDrivers.Driver driver = GpuDrivers.selected(this);
@@ -239,12 +271,46 @@ public class LauncherActivity extends LocalizedActivity {
                 runOnUiThread(() -> {
                     busy = false;
                     refresh();
-                    startActivity(new Intent().setClassName(this, getPackageName() + ".GameActivity"));
+                    startActivity(new Intent(this, GameActivity.class).putExtra(GameActivity.EXTRA_ARGS, gameArguments())
+                            .putExtra(GameActivity.EXTRA_FPS, "true".equals(GameOptions.get(this, GameOptions.FPS_OVERLAY))));
                 });
             } catch (Exception e) {
                 fail(e);
             }
         });
+    }
+
+    /** Complete runtime command line, computed here so the ":game" process never reads stale settings. */
+    private String[] gameArguments() {
+        List<String> args = new ArrayList<>();
+        File files = getFilesDir();
+        args.add("--game_data_root=" + new File(files, "game"));
+        args.add("--user_data_root=" + new File(files, "user"));
+        args.add("--cache_root=" + new File(files, "cache"));
+        args.add("--log_file=" + new File(Log.dir(this), "game.log"));
+        args.add("--gpu_plugin=xenos");
+        GameOptions.arguments(this, args);
+        GpuDrivers.arguments(this, args);
+        // Optional developer overrides (adb push extra_args.txt to Android/data/<package>/files): one --cvar=value
+        // per line; replaces an earlier value of the same cvar (the command line parser rejects repeated options).
+        // Used to compare renderer options on a device without rebuilding.
+        File extra = new File(getExternalFilesDir(null), "extra_args.txt");
+        if (extra.isFile()) {
+            try {
+                for (String line : java.nio.file.Files.readAllLines(extra.toPath())) {
+                    line = line.trim();
+                    if (!line.startsWith("--")) continue;
+                    int eq = line.indexOf('=');
+                    String key = eq > 0 ? line.substring(0, eq + 1) : line;
+                    args.removeIf(a -> a.equals(key) || a.startsWith(key.endsWith("=") ? key : key + "="));
+                    args.add(line);
+                }
+            } catch (Exception e) {
+                Log.i("ANDROID", "extra_args.txt ignored: " + e);
+            }
+        }
+        Log.i("ANDROID", "Starting game: " + String.join(" ", args));
+        return args.toArray(new String[0]);
     }
 
     private void importOrCancel() {

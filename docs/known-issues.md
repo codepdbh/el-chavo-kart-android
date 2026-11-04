@@ -9,3 +9,4 @@
 | 5 | ANDROID | Interfaz del launcher, sonda GPU y prueba Vulkan sin comprobar visualmente | teléfono bloqueado durante la prueba | Pendiente de prueba con el teléfono desbloqueado |
 | 6 | IDIOMA | No se sabe aún cómo el motor elige ESN vs ESM | — | Requiere runtime |
 | 7 | AUDIO | Bancos de voces por idioma no identificados | hipótesis en `docs/ue3-analysis.md` | Requiere runtime |
+| 8 | GRÁFICOS | Pista con franja negra y zonas sobreexpuestas en Adreno | Captura de profundidad y pruebas en Galaxy S25 Ultra, 2026-11-04 | La compensación de profundidad elimina la franja en el circuito probado; quedan zonas blancas y falta validar otras pistas y GPU. Ver `docs/graphics.md`. |

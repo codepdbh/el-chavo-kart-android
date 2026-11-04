@@ -39,6 +39,8 @@ android {
         release {
             minifyEnabled false
             signingConfig signingConfigs.debug
+            // -PckDebuggable: debuggable release for on-device GPU captures (RenderDoc needs a debuggable app).
+            debuggable project.hasProperty('ckDebuggable')
             externalNativeBuild { cmake { arguments '-DCMAKE_BUILD_TYPE=Release' } }
         }
     }

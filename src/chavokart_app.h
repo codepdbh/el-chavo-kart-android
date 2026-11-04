@@ -10,6 +10,9 @@
 #include <rex/rex_app.h>
 
 REXCVAR_DECLARE(bool, chavokart_dump_image);
+#if REX_PLATFORM_ANDROID
+void ChavokartConfigureAndroidCpu();
+#endif
 
 class ChavokartApp : public rex::ReXApp {
  public:
@@ -19,7 +22,12 @@ class ChavokartApp : public rex::ReXApp {
     return std::unique_ptr<ChavokartApp>(new ChavokartApp(ctx, "chavokart", PPCImageConfig));
   }
 
-  void OnPreSetup(rex::RuntimeConfig& config) override { config.gpu_plugin = "xenos"; }
+  void OnPreSetup(rex::RuntimeConfig& config) override {
+    config.gpu_plugin = "xenos";
+#if REX_PLATFORM_ANDROID
+    ChavokartConfigureAndroidCpu();
+#endif
+  }
 
 #if REX_PLATFORM_ANDROID
   // Paths come from GameActivity arguments; keep the runtime settings file in the private user folder.

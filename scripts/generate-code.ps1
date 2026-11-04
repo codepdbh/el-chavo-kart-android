@@ -31,6 +31,9 @@ if ($rc) { throw "[RECOMP] Code generation failed ($rc): $logs\codegen-$stamp.lo
 # Same-function branch placeholders -> original local gotos (see tools/fix_local_branches.py).
 & python (Join-Path $ProjectRoot 'tools\fix_local_branches.py')
 if ($LASTEXITCODE -ne 0) { throw '[RECOMP] Unresolved REX_FATAL placeholders remain (analysis/functions/unresolved_functions.json)' }
+# PPC sync/lwsync/eieio are emitted as comments only; ARM64 needs real fences (tools/restore_ppc_barriers.py).
+& python (Join-Path $ProjectRoot 'tools\restore_ppc_barriers.py')
+if ($LASTEXITCODE -ne 0) { throw '[RECOMP] barrier restoration failed' }
 $image = Join-Path $ProjectRoot 'out\analysis\chavokart-82000000.bin'
 if (-not (Test-Path -LiteralPath $image)) {
     & python (Join-Path $ProjectRoot 'tools\xex_analyze.py') --xex (Join-Path $ProjectRoot 'game_xex\default.xex') `

@@ -7,7 +7,7 @@
 # impractical) and signed with the local debug key for experimental testing.
 # Toolchain (verified on the development machine): JDK 17/21 (Android Studio jbr), Android SDK 35, NDK 28.2.13676358,
 # SDK CMake 3.30.5, Gradle 8.13 wrapper, AGP 8.9.1. Logs: out\logs\android-<timestamp>.log
-param([ValidateSet('Debug', 'Release')][string]$Configuration = 'Debug', [switch]$WithGame, [string]$JavaHome)
+param([ValidateSet('Debug', 'Release')][string]$Configuration = 'Debug', [switch]$WithGame, [switch]$Debuggable, [string]$JavaHome)
 . "$PSScriptRoot\common.ps1"
 if ($WithGame) {
     Assert-CkXex (Join-Path $ProjectRoot 'game_xex\default.xex')
@@ -33,6 +33,8 @@ $log = Join-Path $ProjectRoot "out\logs\android-$stamp.log"
 $task = "assemble$Configuration"
 $gradleArgs = @('-p', $android, $task, '--no-daemon', '--console=plain')
 if ($WithGame) { $gradleArgs += '-PwithGame' }
+# Debuggable release (for on-device GPU capture with RenderDoc); same native Release libraries.
+if ($Debuggable) { $gradleArgs += '-PckDebuggable' }
 $start = Get-Date
 $rc = Invoke-CkLogged (Join-Path $android 'gradlew.bat') $gradleArgs $log
 Write-Output ("[ANDROID] Gradle finished in {0:N1} min" -f ((Get-Date) - $start).TotalMinutes)
