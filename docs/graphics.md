@@ -36,3 +36,23 @@ importados, ejecutar `python tools/android_render_test.py NOMBRE --seconds 75 --
 compilación depurable utiliza el registro privado; en la compilación normal
 recoge el registro de Android del proceso del juego.
 Las capturas y los datos del juego son locales y no se incluyen en el APK.
+
+## Modos de vídeo y compatibilidad móvil
+
+El selector de modo de vídeo anuncia 1280×720 (predeterminado) o 1024×576
+al juego mediante `video_mode_width` y `video_mode_height`. El modo menor es
+experimental: en el Galaxy S25 Ultra arrancó y mostró la carrera, pero todavía
+no se ha medido el tamaño de todos los objetivos de render ni demostrado una
+mejora de FPS. El swapchain seguía siendo 2340×1080. No confundir este ajuste
+con un escalado fraccional de todos los dibujos: el camino Xenos del SDK usa
+escalas internas enteras. Una prueba a 640×360 mostró la imagen estrecha y
+sobreexpuesta, por lo que no se ofrece ese modo.
+
+Se revisó [NFSMW-Recompiled-Mobile](https://github.com/victorgbd/NFSMW-Recompiled-Mobile)
+en el commit `0b3b3be1f700e2227c03b557dc33e9e50a56c6cc`. Su motor nativo
+tiene adaptaciones de capacidades, conversión de texturas y correcciones de
+sincronización comprobadas en Mali-G57; ese motor es distinto del renderizador
+Xenos de este port y no pueden trasladarse como un interruptor genérico. El
+diagnóstico Vulkan existente informa de formatos BC, descriptores y otras
+capacidades reales. MediaTek identifica el SoC, no una familia única de GPU;
+no se han aplicado cambios globales por marca ni validado este APK en Mali.

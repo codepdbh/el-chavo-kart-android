@@ -40,6 +40,9 @@ final class GameOptions {
             new String[]{"auto", "INT", "ESM", "ESN", "PTB"},
             new int[]{R.string.opt_language_auto, R.string.game_lang_INT, R.string.game_lang_ESM, R.string.game_lang_ESN,
                     R.string.game_lang_PTB});
+    static final Option VIDEO_MODE = new Option("video_mode", R.string.opt_video_mode, "1280x720",
+            new String[]{"1280x720", "1024x576"},
+            new int[]{R.string.opt_video_720, R.string.opt_video_576});
     static final Option ASYNC = new Option("async_shaders", R.string.opt_shaders, "true",
             new String[]{"true", "false"}, new int[]{R.string.opt_shaders_async, R.string.opt_shaders_sync});
     static final Option CPU = new Option("fast_cores", R.string.opt_cpu, "true",
@@ -53,7 +56,7 @@ final class GameOptions {
     /** Launcher-side option: counts the guest XE_SWAP packets, i.e. the frames the game really submits. */
     static final Option FPS_OVERLAY = new Option("fps_overlay", R.string.opt_fps_counter, "true",
             new String[]{"true", "false"}, new int[]{R.string.opt_on, R.string.opt_off});
-    static final Option[] ALL = {LANGUAGE, ASYNC, CPU, VSYNC, FRAME_RATE, LOGS, FPS_OVERLAY};
+    static final Option[] ALL = {LANGUAGE, VIDEO_MODE, ASYNC, CPU, VSYNC, FRAME_RATE, LOGS, FPS_OVERLAY};
 
     static SharedPreferences prefs(Context context) {
         return context.getSharedPreferences("chavokart_game", Context.MODE_PRIVATE);
@@ -86,6 +89,9 @@ final class GameOptions {
         // Xenos on Android Vulkan drivers, as measured by NFS Carbon on the Galaxy S25 (Adreno 830): classic render
         // passes (dynamic rendering cost ~40 % of the GPU command thread), host framebuffers, ordinary descriptor
         // sets, and no hard requirement on geometry shaders or non-solid fill.
+        String[] videoMode = get(context, VIDEO_MODE).split("x");
+        args.add("--video_mode_width=" + videoMode[0]);
+        args.add("--video_mode_height=" + videoMode[1]);
         args.add("--vulkan_dynamic_rendering=false");
         args.add("--render_target_path_vulkan=fbo");
         args.add("--vulkan_native_shader_features=false");
