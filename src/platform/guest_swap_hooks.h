@@ -16,6 +16,8 @@ extern "C" __attribute__((visibility("default"))) unsigned long long chavokart_g
 }
 
 #include <chrono>
+#include <algorithm>
+#include <array>
 #include <rex/logging.h>
 
 #include <map>
@@ -25,6 +27,25 @@ extern "C" __attribute__((visibility("default"))) unsigned long long chavokart_g
 
 REXCVAR_DEFINE_BOOL(chavokart_trace_gpu_wait, false, "Chavo Kart/Diagnostics",
                     "Log PM4 WAIT_REG_MEM waits (register/memory polled, reference, host time) every 120 frames");
+REXCVAR_DEFINE_BOOL(chavokart_trace_frame_times, false, "Chavo Kart/Diagnostics",
+                    "Report guest frame interval percentiles every 120 frames");
+
+static inline void ck_trace_frame_time() {
+  if (!REXCVAR_GET(chavokart_trace_frame_times)) return;
+  using Clock = std::chrono::steady_clock;
+  static auto last = Clock::now();
+  static std::array<double, 120> intervals{};
+  static size_t count = 0;
+  const auto now = Clock::now();
+  intervals[count++] = std::chrono::duration<double, std::milli>(now - last).count();
+  last = now;
+  if (count != intervals.size()) return;
+  auto sorted = intervals;
+  std::sort(sorted.begin(), sorted.end());
+  REXLOG_INFO("[PERFORMANCE] guest frame intervals ms p50={:.2f} p95={:.2f} p99={:.2f} max={:.2f}",
+              sorted[59], sorted[113], sorted[118], sorted[119]);
+  count = 0;
+}
 
 // Accumulated WAIT_REG_MEM time per (memory?, address, function, reference), written by the GPU command thread.
 static std::mutex ck_gpu_wait_mutex;
@@ -79,6 +100,7 @@ static RENDERDOC_API_1_0_1* ck_renderdoc_api() {
 
 static inline void ck_on_guest_swap(unsigned long long frame) {
   ck_log_guest_fps(frame);
+  ck_trace_frame_time();
   if (frame % 10 != 0) return;
   static const char* trigger = std::getenv("CK_RDOC_TRIGGER");
   if (!trigger || GetFileAttributesA(trigger) == INVALID_FILE_ATTRIBUTES) return;
@@ -86,5 +108,5 @@ static inline void ck_on_guest_swap(unsigned long long frame) {
   if (RENDERDOC_API_1_0_1* api = ck_renderdoc_api()) api->TriggerCapture();
 }
 #else
-static inline void ck_on_guest_swap(unsigned long long frame) { ck_log_guest_fps(frame); }
+static inline void ck_on_guest_swap(unsigned long long frame) { ck_log_guest_fps(frame); ck_trace_frame_time(); }
 #endif

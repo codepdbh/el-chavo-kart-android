@@ -45,6 +45,8 @@ final class GameOptions {
             new int[]{R.string.opt_video_720, R.string.opt_video_576});
     static final Option ASYNC = new Option("async_shaders", R.string.opt_shaders, "true",
             new String[]{"true", "false"}, new int[]{R.string.opt_shaders_async, R.string.opt_shaders_sync});
+    static final Option OCCLUSION = new Option("occlusion", R.string.opt_occlusion, "true",
+            new String[]{"true", "false"}, new int[]{R.string.opt_occlusion_real, R.string.opt_occlusion_fast});
     static final Option CPU = new Option("fast_cores", R.string.opt_cpu, "true",
             new String[]{"true", "false"}, new int[]{R.string.opt_cpu_fast, R.string.opt_cpu_system});
     static final Option VSYNC = new Option("vsync", R.string.opt_vsync, "true",
@@ -56,7 +58,7 @@ final class GameOptions {
     /** Launcher-side option: counts the guest XE_SWAP packets, i.e. the frames the game really submits. */
     static final Option FPS_OVERLAY = new Option("fps_overlay", R.string.opt_fps_counter, "true",
             new String[]{"true", "false"}, new int[]{R.string.opt_on, R.string.opt_off});
-    static final Option[] ALL = {LANGUAGE, VIDEO_MODE, ASYNC, CPU, VSYNC, FRAME_RATE, LOGS, FPS_OVERLAY};
+    static final Option[] ALL = {LANGUAGE, VIDEO_MODE, ASYNC, OCCLUSION, CPU, VSYNC, FRAME_RATE, LOGS, FPS_OVERLAY};
 
     static SharedPreferences prefs(Context context) {
         return context.getSharedPreferences("chavokart_game", Context.MODE_PRIVATE);
@@ -99,6 +101,7 @@ final class GameOptions {
         args.add("--vulkan_require_fill_mode_non_solid=false");
         args.add("--vulkan_async_skip_incomplete_frames=true");
         args.add("--async_shader_compilation=" + get(context, ASYNC));
+        args.add("--occlusion_query_enable=" + get(context, OCCLUSION));
         args.add("--vsync=" + get(context, VSYNC));
         args.add("--chavokart_guest_vblank_hz=" + get(context, FRAME_RATE));
         args.add("--chavokart_fast_cores=" + get(context, CPU));

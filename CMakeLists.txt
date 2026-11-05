@@ -290,11 +290,14 @@ if(TARGET rexgpu-xenos AND REXGLUE_USE_VULKAN)
     set(ck_depth_state_before "    // std::memcmp instead of != so in case of NaN, every draw won't be")
     set(ck_depth_state_after "    depth_bias_constant_factor += float(ck_active_color_depth_bias);
     // std::memcmp instead of != so in case of NaN, every draw won't be")
+    set(ck_query_before "bool VulkanCommandProcessor::EndGuestOcclusionQuery(uint32_t sample_count_address) {")
+    set(ck_query_after "bool VulkanCommandProcessor::EndGuestOcclusionQuery(uint32_t sample_count_address) {\n  ChavoOcclusionTrace ck_query_trace;")
     ck_patch_sdk_source(rexgpu-xenos src/graphics/vulkan/command_processor.cpp
         "// Altered for El Chavo Kart: vertex residency invalidation and depth diagnostic.
 #include \"${CMAKE_CURRENT_SOURCE_DIR}/src/platform/vulkan_depth_bias.h\"
+#include \"${CMAKE_CURRENT_SOURCE_DIR}/src/platform/occlusion_trace.h\"
 "
-        ck_vb_inc_before ck_vb_inc_after ck_vb_a_before ck_vb_a_after ck_vb_b_before ck_vb_b_after ck_vb_c_before ck_vb_c_after ck_depth_before ck_depth_after ck_depth_state_before ck_depth_state_after)
+        ck_vb_inc_before ck_vb_inc_after ck_vb_a_before ck_vb_a_after ck_vb_b_before ck_vb_b_after ck_vb_c_before ck_vb_c_after ck_depth_before ck_depth_after ck_depth_state_before ck_depth_state_after ck_query_before ck_query_after)
 endif()
 
 if(ANDROID AND TARGET SDL3-shared)

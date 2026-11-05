@@ -214,7 +214,7 @@ public class LauncherActivity extends LocalizedActivity {
                             }).setNegativeButton(R.string.dialog_cancel, null).show());
             options.addView(label(getString(R.string.voice_language) + ": " + getString(R.string.voice_follows_text), 12, MUTED));
         }
-        for (GameOptions.Option option : new GameOptions.Option[]{GameOptions.VIDEO_MODE, GameOptions.FRAME_RATE, GameOptions.ASYNC, GameOptions.CPU, GameOptions.VSYNC, GameOptions.LOGS, GameOptions.FPS_OVERLAY}) {
+        for (GameOptions.Option option : new GameOptions.Option[]{GameOptions.VIDEO_MODE, GameOptions.FRAME_RATE, GameOptions.ASYNC, GameOptions.OCCLUSION, GameOptions.CPU, GameOptions.VSYNC, GameOptions.LOGS, GameOptions.FPS_OVERLAY}) {
             String value = GameOptions.get(this, option);
             String[] optionLabels = new String[option.values.length];
             for (int i = 0; i < optionLabels.length; i++) optionLabels[i] = getString(option.labels[i]);
@@ -228,6 +228,9 @@ public class LauncherActivity extends LocalizedActivity {
                             }).setNegativeButton(R.string.dialog_cancel, null).show());
             if (option == GameOptions.VIDEO_MODE) {
                 options.addView(label(getString(R.string.opt_video_hint), 12, MUTED));
+            }
+            if (option == GameOptions.OCCLUSION && "false".equals(value)) {
+                options.addView(label(getString(R.string.opt_occlusion_hint), 12, MUTED));
             }
             if (option == GameOptions.FRAME_RATE && "120".equals(value)) {
                 options.addView(label(getString(R.string.opt_frame_60_hint), 12, MUTED));

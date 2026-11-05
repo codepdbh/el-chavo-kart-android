@@ -138,6 +138,10 @@
     <string name="opt_video_720">Original · 1280 × 720</string>
     <string name="opt_video_576">1024 × 576 · experimental</string>
     <string name="opt_video_hint">Puede reducir algunos efectos; no se ha confirmado que reduzca toda la escena ni que mejore los FPS. Reinicia el juego.</string>
+    <string name="opt_occlusion">Consultas de visibilidad</string>
+    <string name="opt_occlusion_real">Reales</string>
+    <string name="opt_occlusion_fast">Rápidas · experimental</string>
+    <string name="opt_occlusion_hint">Evita esperas de GPU usando resultados aproximados. Puede cambiar la visibilidad o los efectos y no siempre aumenta los FPS.</string>
     <string name="opt_frame_rate">Frecuencia de imágenes</string>
     <string name="opt_frame_original">Original</string>
     <string name="opt_frame_60">Hasta 60 FPS · experimental</string>
