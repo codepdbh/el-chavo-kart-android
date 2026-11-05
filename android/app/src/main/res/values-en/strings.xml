@@ -133,6 +133,11 @@
     <string name="opt_cpu_fast">Prefer fast cores</string>
     <string name="opt_cpu_system">Let the system decide</string>
     <string name="opt_vsync">Vertical sync (VSync)</string>
+    <string name="opt_frame_rate">Frame rate</string>
+    <string name="opt_frame_original">Original</string>
+    <string name="opt_frame_60">Up to 60 FPS · experimental</string>
+    <string name="opt_frame_60_hint">Game speed or physics may change, and frame rate can drop.</string>
+    <string name="fps_guest_format">%1$.0f game FPS</string>
     <string name="opt_on">On</string>
     <string name="opt_off">Off</string>
     <string name="opt_logs">Game logs</string>

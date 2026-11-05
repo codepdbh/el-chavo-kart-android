@@ -44,7 +44,7 @@ public class GameActivity extends LandscapeSDLActivity
                 long frames = nativeGuestFrames(), now = System.nanoTime();
                 if (fpsLastFrames >= 0 && now > fpsLastTime) {
                     double fps = (frames - fpsLastFrames) * 1e9 / (now - fpsLastTime);
-                    fpsView.setText(String.format(java.util.Locale.ROOT, "%.0f FPS", fps));
+                    fpsView.setText(getString(R.string.fps_guest_format, fps));
                 }
                 fpsLastFrames = frames;
                 fpsLastTime = now;

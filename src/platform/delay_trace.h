@@ -79,7 +79,9 @@ struct Scope {
   Memory* memory;
   int64_t interval;
   bool enabled = REXCVAR_GET(chavokart_trace_delay);
-  std::chrono::steady_clock::time_point start = std::chrono::steady_clock::now();
+  // Kernel waits are extremely frequent. Do not query the clock when tracing is disabled.
+  std::chrono::steady_clock::time_point start =
+      enabled ? std::chrono::steady_clock::now() : std::chrono::steady_clock::time_point{};
   ~Scope() {
     if (enabled) {
       Record(kind, memory, interval,

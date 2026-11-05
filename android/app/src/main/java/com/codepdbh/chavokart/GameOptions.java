@@ -46,12 +46,14 @@ final class GameOptions {
             new String[]{"true", "false"}, new int[]{R.string.opt_cpu_fast, R.string.opt_cpu_system});
     static final Option VSYNC = new Option("vsync", R.string.opt_vsync, "true",
             new String[]{"true", "false"}, new int[]{R.string.opt_on, R.string.opt_off});
+    static final Option FRAME_RATE = new Option("frame_rate", R.string.opt_frame_rate, "0",
+            new String[]{"0", "120"}, new int[]{R.string.opt_frame_original, R.string.opt_frame_60});
     static final Option LOGS = new Option("logs", R.string.opt_logs, "warn",
             new String[]{"warn", "info"}, new int[]{R.string.opt_logs_warn, R.string.opt_logs_info});
     /** Launcher-side option: counts the guest XE_SWAP packets, i.e. the frames the game really submits. */
     static final Option FPS_OVERLAY = new Option("fps_overlay", R.string.opt_fps_counter, "true",
             new String[]{"true", "false"}, new int[]{R.string.opt_on, R.string.opt_off});
-    static final Option[] ALL = {LANGUAGE, ASYNC, CPU, VSYNC, LOGS, FPS_OVERLAY};
+    static final Option[] ALL = {LANGUAGE, ASYNC, CPU, VSYNC, FRAME_RATE, LOGS, FPS_OVERLAY};
 
     static SharedPreferences prefs(Context context) {
         return context.getSharedPreferences("chavokart_game", Context.MODE_PRIVATE);
@@ -92,6 +94,7 @@ final class GameOptions {
         args.add("--vulkan_async_skip_incomplete_frames=true");
         args.add("--async_shader_compilation=" + get(context, ASYNC));
         args.add("--vsync=" + get(context, VSYNC));
+        args.add("--chavokart_guest_vblank_hz=" + get(context, FRAME_RATE));
         args.add("--chavokart_fast_cores=" + get(context, CPU));
         args.add("--log_level=" + get(context, LOGS));
         String language = effectiveLanguage(context, GameFiles.languages(GameFiles.gameDir(context)));

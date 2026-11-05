@@ -17,6 +17,8 @@ diagnóstico con `--chavokart_depth_bias_units=0`; es una solución específica
 para una diferencia observada en Adreno, no una garantía para otros drivers.
 Una compensación de profundidad también puede cambiar la visibilidad de
 superficies casi coincidentes, por lo que deben revisarse más circuitos y GPU.
+El estado corregido se incorpora a la caché de estado dinámica del renderizador,
+sin enviar un cambio adicional por cada dibujo.
 
 Con la compensación se comprobó la pantalla de título y una carrera controlada
 en el S25: la franja desapareció y el juego se mantuvo cerca de 30 FPS durante
@@ -24,6 +26,8 @@ el tramo observado. Todavía se observaron zonas sobreexpuestas y algunas
 pausas de compilación de shaders; no se ha demostrado que estén corregidas.
 La lectura síncrona completa (`--readback_resolve=full`) se probó como
 diagnóstico y bajó a unos 17–19 FPS, por lo que no se activa por defecto.
+Los destellos blancos también se han reproducido con la compilación asíncrona
+desactivada; su causa sigue abierta.
 
 Para repetir las pruebas en un dispositivo desbloqueado con los datos ya
 importados, ejecutar `python tools/android_render_test.py NOMBRE --seconds 75 --

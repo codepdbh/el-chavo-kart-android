@@ -214,7 +214,7 @@ public class LauncherActivity extends LocalizedActivity {
                             }).setNegativeButton(R.string.dialog_cancel, null).show());
             options.addView(label(getString(R.string.voice_language) + ": " + getString(R.string.voice_follows_text), 12, MUTED));
         }
-        for (GameOptions.Option option : new GameOptions.Option[]{GameOptions.ASYNC, GameOptions.CPU, GameOptions.VSYNC, GameOptions.LOGS, GameOptions.FPS_OVERLAY}) {
+        for (GameOptions.Option option : new GameOptions.Option[]{GameOptions.FRAME_RATE, GameOptions.ASYNC, GameOptions.CPU, GameOptions.VSYNC, GameOptions.LOGS, GameOptions.FPS_OVERLAY}) {
             String value = GameOptions.get(this, option);
             String[] optionLabels = new String[option.values.length];
             for (int i = 0; i < optionLabels.length; i++) optionLabels[i] = getString(option.labels[i]);
@@ -226,6 +226,9 @@ public class LauncherActivity extends LocalizedActivity {
                                 d.dismiss();
                                 refreshOptions();
                             }).setNegativeButton(R.string.dialog_cancel, null).show());
+            if (option == GameOptions.FRAME_RATE && "120".equals(value)) {
+                options.addView(label(getString(R.string.opt_frame_60_hint), 12, MUTED));
+            }
         }
 
         options.addView(heading(R.string.section_driver));

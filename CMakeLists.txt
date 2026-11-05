@@ -179,6 +179,19 @@ if(ANDROID AND TARGET rexcore)
 endif()
 
 if(TARGET rexgpu-xenos)
+    # Optional diagnostic: vary the guest vblank cadence while retaining the rest of the vsync path.
+    set(ck_vblank_before "        uint64_t no_vsync_interval_ticks = std::max(uint64_t(1), guest_tick_frequency / 1000);")
+    set(ck_vblank_after "        const int32_t ck_vblank_hz = REXCVAR_GET(chavokart_guest_vblank_hz);
+        if (ck_vblank_hz >= 30 && ck_vblank_hz <= 240) {
+          vsync_interval_ticks = std::max(uint64_t(1), guest_tick_frequency / uint64_t(ck_vblank_hz));
+        }
+        uint64_t no_vsync_interval_ticks = std::max(uint64_t(1), guest_tick_frequency / 1000);")
+    set(ck_vblank_select_before "              REXCVAR_GET(vsync) ? vsync_interval_ticks : no_vsync_interval_ticks;")
+    set(ck_vblank_select_after "              (REXCVAR_GET(vsync) || (ck_vblank_hz >= 30 && ck_vblank_hz <= 240))
+                  ? vsync_interval_ticks : no_vsync_interval_ticks;")
+    ck_patch_sdk_source(rexgpu-xenos src/graphics/graphics_system.cpp
+        "#include \"${CMAKE_CURRENT_SOURCE_DIR}/src/platform/guest_vblank.h\"\n"
+        ck_vblank_before ck_vblank_after ck_vblank_select_before ck_vblank_select_after)
     # Count guest frames (XE_SWAP packets) for the in-game FPS counter. The SDK's perf counters are compiled out of
     # Release builds; this is a single relaxed atomic increment per swap, read through chavokart_guest_swaps().
     set(ck_swap_before "bool CommandProcessor::ExecutePacketType3_XE_SWAP(memory::RingBuffer* reader, uint32_t packet,\n                                                  uint32_t count) {\n  SCOPE_profile_cpu_f(\"gpu\");")
@@ -264,23 +277,24 @@ if(TARGET rexgpu-xenos AND REXGLUE_USE_VULKAN)
     # Adreno reversed-Z prepass / color-pass precision workaround. The game's color pass reuses
     # depth from an earlier pass, but the two rasterized depths differ by a few float32 ULPs.
     set(ck_depth_before "  UpdateDynamicState(viewport_info, primitive_polygonal, normalized_depth_control);")
-    set(ck_depth_after "  UpdateDynamicState(viewport_info, primitive_polygonal, normalized_depth_control);
-  const int32_t ck_depth_bias = REXCVAR_GET(chavokart_depth_bias_units);
+    set(ck_depth_after "  const int32_t ck_depth_bias = REXCVAR_GET(chavokart_depth_bias_units);
+  ck_active_color_depth_bias = 0;
   if (ck_depth_bias && GetVulkanDevice()->properties().vendorID == 0x5143 &&
       host_render_targets_used && normalized_color_mask && pixel_shader &&
       !pixel_shader->writes_depth() && normalized_depth_control.z_enable &&
       normalized_depth_control.zfunc == xenos::CompareFunction::kGreaterEqual &&
       regs.Get<reg::RB_DEPTH_INFO>().depth_format == xenos::DepthRenderTargetFormat::kD24FS8) {
-    deferred_command_buffer_.CmdVkSetDepthBias(dynamic_depth_bias_constant_factor_ + float(ck_depth_bias),
-                                               0.0f, dynamic_depth_bias_slope_factor_);
-    // Restore the guest's unmodified state on the next draw, including depth-only draws.
-    dynamic_depth_bias_update_needed_ = true;
-  }")
+    ck_active_color_depth_bias = ck_depth_bias;
+  }
+  UpdateDynamicState(viewport_info, primitive_polygonal, normalized_depth_control);")
+    set(ck_depth_state_before "    // std::memcmp instead of != so in case of NaN, every draw won't be")
+    set(ck_depth_state_after "    depth_bias_constant_factor += float(ck_active_color_depth_bias);
+    // std::memcmp instead of != so in case of NaN, every draw won't be")
     ck_patch_sdk_source(rexgpu-xenos src/graphics/vulkan/command_processor.cpp
         "// Altered for El Chavo Kart: vertex residency invalidation and depth diagnostic.
 #include \"${CMAKE_CURRENT_SOURCE_DIR}/src/platform/vulkan_depth_bias.h\"
 "
-        ck_vb_inc_before ck_vb_inc_after ck_vb_a_before ck_vb_a_after ck_vb_b_before ck_vb_b_after ck_vb_c_before ck_vb_c_after ck_depth_before ck_depth_after)
+        ck_vb_inc_before ck_vb_inc_after ck_vb_a_before ck_vb_a_after ck_vb_b_before ck_vb_b_after ck_vb_c_before ck_vb_c_after ck_depth_before ck_depth_after ck_depth_state_before ck_depth_state_after)
 endif()
 
 if(ANDROID AND TARGET SDL3-shared)

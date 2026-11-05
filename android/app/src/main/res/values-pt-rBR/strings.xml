@@ -133,6 +133,11 @@
     <string name="opt_cpu_fast">Preferir núcleos rápidos</string>
     <string name="opt_cpu_system">O sistema decide</string>
     <string name="opt_vsync">Sincronização vertical (VSync)</string>
+    <string name="opt_frame_rate">Taxa de quadros</string>
+    <string name="opt_frame_original">Original</string>
+    <string name="opt_frame_60">Até 60 FPS · experimental</string>
+    <string name="opt_frame_60_hint">A velocidade ou a física do jogo podem mudar e a taxa de quadros pode cair.</string>
+    <string name="fps_guest_format">%1$.0f FPS jogo</string>
     <string name="opt_on">Ativada</string>
     <string name="opt_off">Desativada</string>
     <string name="opt_logs">Registros do jogo</string>

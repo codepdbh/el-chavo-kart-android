@@ -10,3 +10,6 @@ constexpr int32_t kChavokartDefaultDepthBias = 0;
 #endif
 REXCVAR_DEFINE_INT32(chavokart_depth_bias_units, kChavokartDefaultDepthBias, "Chavo Kart/Graphics",
                      "Adreno reversed-Z color-pass bias in Vulkan units (0 disables)");
+
+// Set by the draw on the GPU command thread and consumed by UpdateDynamicState.
+static thread_local int32_t ck_active_color_depth_bias = 0;
