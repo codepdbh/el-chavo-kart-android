@@ -52,3 +52,21 @@ entre fotogramas enviados por el juego cada 120 fotogramas. Esos intervalos no
 sustituyen una medida de fotogramas presentados con SurfaceFlinger. Comparar el
 modo real y el rápido con la caché de shaders ya caliente y observar objetos,
 sombras y luz; no inferir una mejora por una única escena.
+
+### Pruebas en Galaxy S25 Ultra
+
+En una prueba de arranque y secuencia de demostración con consultas reales
+y diagnóstico activado no aparecieron registros de lecturas de oclusión. Esto
+no demuestra que no se utilicen en otras carreras, pero impide atribuir las
+caídas observadas a ese mecanismo. La comparación con consultas rápidas quedó
+inconclusa: durante una primera prueba el juego se quedó a 0 FPS tras varias
+entradas durante los vídeos; en otro arranque llegó al menú. No se ha
+aislado la causa del bloqueo ni demostrado que el modo rápido mejore los FPS.
+
+En una carrera con compilación asíncrona, el contador del juego varió
+aproximadamente entre 25 y 52 FPS durante el tramo observado. Algunas pausas
+coincidieron con creación de canalizaciones; también se observaron intervalos
+altos en transiciones. El teléfono alcanzó estado térmico 3, por lo que
+esas cifras no constituyen una comparación controlada entre ajustes. Los
+destellos persisten y falta identificar su causa. Las capturas y registros
+locales de estas pruebas se guardan en `out/android-tests/`.
